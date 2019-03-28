@@ -1,0 +1,32 @@
+@import 'variables';
+
+.container--login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.login__input {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+}
+
+.button--login {
+    position: absolute;
+    right: 0;
+}
+
+.login__issues {
+    font-family: $font--others;
+    font-weight: bold;
+    font-size: 14px;
+    color: $blue--dark;
+
+    a {
+        color: $blue--lightest;
+    }
+}
+

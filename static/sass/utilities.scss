@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Noto+Sans');
+@import 'variables';
+
+.button {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    border: 2px solid transparent;
+    padding: 7px 15px 7px 15px;
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button--submit {
+    border-color: $green;
+    color: $green;
+}
+
+.button__icon {
+    margin-left: 20px;
+}

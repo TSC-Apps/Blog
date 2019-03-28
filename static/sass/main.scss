@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Noto+Sans');
+@import 'variables';
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+  font-family: $font--text;
+  font-weight: lighter;
+  font-size: 18px;
+  color: $gray--light;
+  background-color: $blue--darkest;
+  background-image: url(../img/crosses_circles.svg);
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font--others;
+  font-weight: bold;
+}
+
+
+h1 {
+  font-size: 3.5em;
+  text-align: center;
+  color: #FFF;
+}
+
+h2 {
+  font-size: 3.5em;
+  text-align: center;
+  color: #FFF;
+}
+
+h3 {
+  font-size: 2.7em;
+  color: $blue--dark;
+}
+
+h4 {
+  font-size: 2em;
+  color: $blue--dark;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    font-family: $font--others;
+    color: $blue--dark;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* 
+====================================
+TOPBAR 
+*/
+
+.topbar {
+    width: 100%;
+    height: 70px;
+    background-color: $blue--light;
+    color: $blue--lightest;
+    font-family: $font--others;
+    font-weight: bold;
+    line-height: 70px;
+    font-size: 14px;
+    position: fixed;
+
+    a {
+        color: $blue--lightest;
+    }
+
+    .icon {
+        position: absolute;
+        font-size: 18px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    .icon--user {
+        right: 20px;
+    }
+
+    .icon--search {
+        right: 60px;
+    }
+}
+
+.topbar__logo {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+ul {
+    display: inline;
+    list-style: none;
+
+    li {
+        display: inline-block;
+        padding: 0 20px 0 20px;
+        font-weight: bold;
+    }
+
+    li:hover {
+        background-color: #4D72F3;
+    }
+}
+
+.search {
+    font-family: $font--others;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 100px;
+    text-align: center;
+    color: $blue--lightest;
+    background-color: #374D9E;
+    width: 100%;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+
+    display: none;
+}
+
+.search::placeholder {
+    color: $blue--lightest;
+}
+
+.search {
+    outline: none;
+}
