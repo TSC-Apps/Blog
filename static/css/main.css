@@ -8,12 +8,13 @@ body {
   font-weight: lighter;
   font-size: 18px;
   color: #9DA8B0;
-  background-color: #201F44;
+  background-color: white;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Noto Sans", sans-serif;
   font-weight: bold;
+  z-index: 500;
 }
 
 h1 {
@@ -68,7 +69,8 @@ TOPBAR
   font-weight: bold;
   line-height: 70px;
   font-size: 14px;
-  position: fixed;
+  position: absolute;
+  z-index: 1000;
 }
 .topbar a {
   color: #F2F2F2;
@@ -100,6 +102,7 @@ ul li {
   display: inline-block;
   padding: 0 20px 0 20px;
   font-weight: bold;
+  transition: box-shadow 0.3s ease-in-out;
 }
 ul li:hover {
   -webkit-box-shadow: inset 0 -5px 0 #857DFF;

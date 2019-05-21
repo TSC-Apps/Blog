@@ -1,3 +1,7 @@
+body {
+  background-color: #201F44;
+}
+
 .container--login {
   position: absolute;
   top: 440px;
@@ -44,8 +48,8 @@
 }
 
 .vector--1 {
-  left: 200px;
-  top: -170px;
+  right: 500px;
+  top: 300px;
 }
 
 .vector--2 {
