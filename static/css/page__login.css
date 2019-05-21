@@ -14,6 +14,15 @@
 .button--login {
   position: absolute;
   right: 0;
+  border-color: #6C63FF;
+  color: #F2F2F2;
+  transition: 0.3s background-color, color, border-color ease-in-out;
+}
+
+.button--login:hover {
+  background-color: #42E898;
+  border-color: #42E898;
+  color: #F2F2F2;
 }
 
 .login__issues {
@@ -23,7 +32,38 @@
   color: #364F61;
 }
 .login__issues a {
-  color: #DBE9F3;
+  color: #F2F2F2;
+  transition: 0.3s color ease-in-out;
+}
+.login__issues a:hover {
+  color: #42E898;
+}
+
+.vector {
+  position: absolute;
+}
+
+.vector--c {
+  right: 25%;
+  top: 30%;
+}
+
+.vector--tr {
+  right: -200px;
+  top: -120px;
+}
+
+.vector--bl {
+  left: -300px;
+  bottom: -250px;
+}
+
+.vectors--login {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
 }
 
 /*# sourceMappingURL=page__login.css.map */

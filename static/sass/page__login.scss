@@ -5,7 +5,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
 }
 
 .login__input {
@@ -17,6 +16,15 @@
 .button--login {
     position: absolute;
     right: 0;
+    border-color: $blue--light;
+    color: $basic;
+    transition: 0.3s background-color, color, border-color ease-in-out;
+}
+
+.button--login:hover {
+    background-color: $green;
+    border-color: $green;
+    color: $basic;
 }
 
 .login__issues {
@@ -26,7 +34,38 @@
     color: $blue--dark;
 
     a {
-        color: $blue--lightest;
+        color: $basic;
+        transition: 0.3s color ease-in-out;
+    }
+
+    a:hover {
+        color: $green;
     }
 }
 
+.vector {
+    position: absolute;
+}
+
+.vector--c {
+    right: 25%;
+    top: 30%;
+}
+
+.vector--tr {
+    right: -200px;
+    top: -120px;
+}
+
+.vector--bl {
+    left: -300px;
+    bottom: -250px;
+}
+
+.vectors--login {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
