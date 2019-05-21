@@ -1,0 +1,62 @@
+.header__text {
+  position: absolute;
+  text-align: left;
+  width: 540px;
+  margin-top: 290px;
+}
+.header__text h1, .header__text h2 {
+  text-align: left;
+}
+.header__text h2 {
+  font-size: 1.3em;
+  font-weight: normal;
+}
+
+.button--header {
+  background-color: #F2F2F2;
+  color: #201F44;
+  border-color: #F2F2F2;
+  margin-top: 50px;
+  transition: 0.3s background-color, color, border-color ease-in-out;
+}
+
+.button--header:hover {
+  background-color: #42E898;
+  border-color: #42E898;
+  color: #F2F2F2;
+}
+
+.vector {
+  position: absolute;
+}
+
+.vector--1 {
+  left: 200px;
+  top: -170px;
+}
+
+.vector--2 {
+  right: -200px;
+  top: -300px;
+}
+
+.vector--3 {
+  left: -240px;
+  bottom: -150px;
+}
+
+.vector--illustration {
+  right: 150px;
+  top: 250px;
+  z-index: 1;
+}
+
+.vectors--header {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+/*# sourceMappingURL=page__index.css.map */

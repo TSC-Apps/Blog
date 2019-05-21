@@ -1,0 +1,64 @@
+@import 'variables';
+
+.header__text {
+    position: absolute;
+    text-align: left;
+    width: 540px;
+    margin-top: 290px;
+    
+    h1, h2 {
+        text-align: left;
+    }
+
+    h2 {
+        font-size: 1.3em;
+        font-weight: normal;
+    }
+}
+
+.button--header {
+    background-color: $basic;
+    color: $blue--darkest;
+    border-color: $basic;
+    margin-top: 50px;
+    transition: 0.3s background-color, color, border-color ease-in-out;
+}
+
+.button--header:hover {
+    background-color: $green;
+    border-color: $green;
+    color: $basic;
+}
+
+.vector {
+    position: absolute;
+}
+
+.vector--1 {
+    left: 200px;
+    top: -170px;
+}
+
+.vector--2 {
+    right: -200px;
+    top: -300px;
+}
+
+.vector--3 {
+    left: -240px;
+    bottom: -150px;
+}
+
+.vector--illustration {
+    right: 150px;
+    top: 250px;
+    z-index: 1;
+}
+
+.vectors--header {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
