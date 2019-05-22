@@ -22,13 +22,6 @@ body {
     right: 0;
     border-color: $blue--light;
     color: $basic;
-    transition: 0.3s background-color, color, border-color ease-in-out;
-}
-
-.button--login:hover {
-    background-color: $green;
-    border-color: $green;
-    color: $basic;
 }
 
 .login__issues {

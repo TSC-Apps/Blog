@@ -20,13 +20,6 @@ body {
   right: 0;
   border-color: #6C63FF;
   color: #F2F2F2;
-  transition: 0.3s background-color, color, border-color ease-in-out;
-}
-
-.button--login:hover {
-  background-color: #42E898;
-  border-color: #42E898;
-  color: #F2F2F2;
 }
 
 .login__issues {

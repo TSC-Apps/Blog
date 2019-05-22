@@ -8,15 +8,43 @@
   background-color: transparent;
   border-radius: 4px;
   cursor: pointer;
+  transition: 0.3s background-color, color, border-color ease-in-out;
 }
 
 .button--submit {
   border-color: #42E898;
-  color: #42E898;
+  color: #364F61;
+}
+
+.button--submit:hover {
+  background-color: #42E898;
 }
 
 .button__icon {
   margin-left: 20px;
+}
+
+.button--normal {
+  border-color: #201F44;
+  color: #201F44;
+}
+
+.button--normal:hover {
+  background: #201F44;
+  color: #F2F2F2;
+}
+
+.button--full {
+  display: block;
+  width: 100%;
+  background: #6C63FF;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #F2F2F2;
+}
+
+.button--full:hover {
+  background: #42E898;
 }
 
 /*# sourceMappingURL=utilities.css.map */

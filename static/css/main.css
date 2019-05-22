@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather|Noto+Sans");
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
@@ -7,11 +9,16 @@ body {
   font-family: "Merriweather", serif;
   font-weight: lighter;
   font-size: 18px;
-  color: #9DA8B0;
-  background-color: white;
+  color: #64708F;
+  background-color: #F2F2F2;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Noto Sans", sans-serif;
   font-weight: bold;
   z-index: 500;
@@ -20,27 +27,39 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 3.5em;
   text-align: center;
-  color: #FFF;
+  color: #F2F2F2;
 }
 
 h2 {
-  font-size: 3.5em;
-  text-align: center;
-  color: #FFF;
+  font-size: 1.4em;
+  font-weight: normal;
+  color: #F2F2F2;
 }
 
 h3 {
   font-size: 2.7em;
   color: #364F61;
+  text-align: center;
 }
 
 h4 {
+  font-size: 1.35em;
+  text-align: center;
+  margin-top: -30px;
+  font-weight: normal;
+}
+
+h5 {
   font-size: 2em;
   color: #364F61;
 }
 
 a {
   text-decoration: none;
+}
+
+p {
+  line-height: 188%;
 }
 
 input {
@@ -54,6 +73,15 @@ input {
 .container {
   max-width: 80%;
   margin: 0 auto;
+}
+
+.container--post {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section {
+  margin-top: 100px;
 }
 
 /* 
@@ -132,6 +160,22 @@ ul li:hover {
 
 .search {
   outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #E3E3E3;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6C63FF;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #201F44;
 }
 
 /*# sourceMappingURL=main.css.map */

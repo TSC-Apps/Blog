@@ -10,13 +10,41 @@
     background-color: transparent;
     border-radius: 4px;
     cursor: pointer;
+    transition: 0.3s background-color, color, border-color ease-in-out;
 }
 
 .button--submit {
     border-color: $green;
-    color: $green;
+    color: $blue--dark;
+}
+
+.button--submit:hover {
+    background-color: $green;
 }
 
 .button__icon {
     margin-left: 20px;
+}
+
+.button--normal {
+    border-color: $blue--darkest;
+    color: $blue--darkest;
+}
+
+.button--normal:hover {
+    background: $blue--darkest;
+    color: $basic;
+}
+
+.button--full {
+    display: block;
+    width: 100%;
+    background: $blue--light;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: $basic;
+}
+
+.button--full:hover {
+    background: $green;
 }
