@@ -170,3 +170,71 @@ BLOG
     }
 }
 
+/*
+====================================
+PEOPLE
+*/
+.people__box {
+    margin-top: 50px;
+    width: 400px;
+    height: 600px;
+    border-radius: 4px;
+    background: darkblue;
+    text-align: center;
+    color: $basic;
+    font-weight: 700;
+    font-family: $font--others;
+    -webkit-box-shadow: 0px 4px 25px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 4px 25px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 4px 25px 0px rgba(0,0,0,0.25);
+
+    .people__box--icons {
+        font-size: 1.35em;
+        margin-top: 33px;
+        display: none;
+    }
+
+    .people__box--name {
+        font-size: 1.35em;
+        color: $green;
+        margin-top: 430px;
+        display: none;
+    }
+
+    .people__box--function {
+        margin-top: 20px;
+        display: none;
+    }
+}
+
+.people__box::after {
+    content: '';
+    display: block;
+    // to w przypadku kiedy pojawia sie tekst na obrazku
+    //margin-top: -557px;
+    width: 400px;
+    height: 600px;
+    border-radius: 4px;
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.62) 0%, rgba(32,32,80,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.62) 0%,rgba(32,32,80,1) 100%);
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.62) 0%,rgba(32,32,80,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e000000', endColorstr='#202050',GradientType=0 );
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.people__box:hover::after {
+    opacity: 1;
+}
+
+.people__box--1 {
+    background: url(../img/people--1.png) center no-repeat;
+}
+
+.people__box--2 {
+    background: url(../img/people--2.png) center no-repeat;
+}
+
+.people__box--3 {
+    background: url(../img/people--3.png) center no-repeat;
+}
