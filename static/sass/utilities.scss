@@ -36,6 +36,17 @@
     color: $basic;
 }
 
+.button--blue {
+    border-color: $blue--light;
+    background: #403E83;
+    color: $basic;
+}
+
+.button--blue:hover {
+    background: $blue--light;
+    color: $basic;
+}
+
 .button--full {
     display: block;
     width: 100%;

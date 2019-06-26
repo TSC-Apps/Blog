@@ -8,9 +8,9 @@ HEADER
 header {
     overflow: hidden;
     background-color: $blue--darkest;
-    border-bottom-left-radius: 200% 30%;
-    border-bottom-right-radius: 500% 40%;
-    height: 106vh;
+    // border-bottom-left-radius: 30% 30%;
+    // border-bottom-right-radius: 300% 40%;
+    height: 114vh;
 }
 
 .header__text {
@@ -174,6 +174,10 @@ BLOG
 ====================================
 PEOPLE
 */
+.people {
+    margin-top: 200px;
+}
+
 .people__box {
     margin-top: 50px;
     width: 400px;
@@ -187,7 +191,7 @@ PEOPLE
     -webkit-box-shadow: 0px 4px 25px 0px rgba(0,0,0,0.25);
     -moz-box-shadow: 0px 4px 25px 0px rgba(0,0,0,0.25);
     box-shadow: 0px 4px 25px 0px rgba(0,0,0,0.25);
-
+    
     .people__box--icons {
         font-size: 1.35em;
         margin-top: 33px;
@@ -237,4 +241,68 @@ PEOPLE
 
 .people__box--3 {
     background: url(../img/people--3.png) center no-repeat;
+}
+
+/*
+====================================
+OFFER
+*/
+.offer {
+    height: auto;
+    padding-bottom: 250px;
+    background-color: #403E83;
+    margin-top: 250px;
+    // border-top-right-radius: 30% 30%;
+    // border-bottom-left-radius: 10% 10%;
+    // border-bottom-right-radius: 30% 50%;
+    // border-top-left-radius: 300% 40%;
+
+    h3, h4 {
+        color: $basic;
+    }
+
+    h3 {
+        padding-top: 80px;
+    }
+}
+
+.offer__boxes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 150px;
+}
+
+.offer__box {
+    width: 500px;
+    padding: 50px;
+    position: relative;
+    border-radius: 4px;
+    border: 2px solid $blue--light;
+    height: 300px;
+    margin: 0 auto;
+
+    .offer__box--title {
+        color: $green;
+        font-size: 2.7em;
+        font-family: $font--others;
+        font-weight: bold;
+        position: absolute;
+        left: -50px;
+    }
+
+    .offer__box--description {
+        color: $basic;
+        margin-top: 90px;
+    }
+
+    .button--blue {
+        position: absolute;
+        right: 10px;
+        bottom: -21px;
+    }
+}
+
+.offer__box:nth-child(odd) {
+    margin-top: 50px;
 }

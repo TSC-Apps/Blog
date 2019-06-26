@@ -34,6 +34,17 @@
   color: #F2F2F2;
 }
 
+.button--blue {
+  border-color: #6C63FF;
+  background: #403E83;
+  color: #F2F2F2;
+}
+
+.button--blue:hover {
+  background: #6C63FF;
+  color: #F2F2F2;
+}
+
 .button--full {
   display: block;
   width: 100%;

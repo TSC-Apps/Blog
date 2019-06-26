@@ -5,9 +5,7 @@ HEADER
 header {
   overflow: hidden;
   background-color: #201F44;
-  border-bottom-left-radius: 200% 30%;
-  border-bottom-right-radius: 500% 40%;
-  height: 106vh;
+  height: 114vh;
 }
 
 .header__text {
@@ -164,6 +162,10 @@ BLOG
 ====================================
 PEOPLE
 */
+.people {
+  margin-top: 200px;
+}
+
 .people__box {
   margin-top: 50px;
   width: 400px;
@@ -222,6 +224,61 @@ PEOPLE
 
 .people__box--3 {
   background: url(../img/people--3.png) center no-repeat;
+}
+
+/*
+====================================
+OFFER
+*/
+.offer {
+  height: auto;
+  padding-bottom: 250px;
+  background-color: #403E83;
+  margin-top: 250px;
+}
+.offer h3, .offer h4 {
+  color: #F2F2F2;
+}
+.offer h3 {
+  padding-top: 80px;
+}
+
+.offer__boxes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 150px;
+}
+
+.offer__box {
+  width: 500px;
+  padding: 50px;
+  position: relative;
+  border-radius: 4px;
+  border: 2px solid #6C63FF;
+  height: 300px;
+  margin: 0 auto;
+}
+.offer__box .offer__box--title {
+  color: #42E898;
+  font-size: 2.7em;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  position: absolute;
+  left: -50px;
+}
+.offer__box .offer__box--description {
+  color: #F2F2F2;
+  margin-top: 90px;
+}
+.offer__box .button--blue {
+  position: absolute;
+  right: 10px;
+  bottom: -21px;
+}
+
+.offer__box:nth-child(odd) {
+  margin-top: 50px;
 }
 
 /*# sourceMappingURL=page__index.css.map */

@@ -90,6 +90,12 @@ input {
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.container--offer {
+    width: 98%;
+    margin: 0 auto;
 }
 
 section {
@@ -112,6 +118,7 @@ TOPBAR
     font-size: 14px;
     position: absolute;
     z-index: 1000;
+    position: fixed;
 
     a {
         color: $basic;
