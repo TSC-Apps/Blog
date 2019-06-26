@@ -196,33 +196,55 @@ PEOPLE
     -webkit-box-shadow: 0px 4px 25px 0px rgba(0,0,0,0.25);
     -moz-box-shadow: 0px 4px 25px 0px rgba(0,0,0,0.25);
     box-shadow: 0px 4px 25px 0px rgba(0,0,0,0.25);
-    
+    position: relative;
+
+
     .people__box--icons {
+        position: absolute;
+        top: 40px;
+        left: 0;
+        right: 0;
         font-size: 1.35em;
-        margin-top: 33px;
-        display: none;
+        color: $basic;
+        z-index: 200;
+        // display: none;
     }
 
     .people__box--name {
+        position: absolute;
+        bottom: 90px;
+        left: 0;
+        right: 0;
+        font-family: $font--others;
         font-size: 1.35em;
         color: $green;
-        margin-top: 430px;
-        display: none;
+        font-weight: bold;
+        text-align: center;
+        z-index: 200;
+        // display: none;
     }
 
     .people__box--function {
-        margin-top: 20px;
-        display: none;
+        text-align: center;
+        position: absolute;
+        font-family: $font--others;
+        color: $basic;
+        bottom: 50px;
+        left: 0;
+        right: 0;
+        z-index: 200;
+        // display: none;
     }
 }
 
 .people__box::after {
     content: '';
     display: block;
-    // to w przypadku kiedy pojawia sie tekst na obrazku
-    //margin-top: -557px;
-    width: 400px;
-    height: 600px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
     border-radius: 4px;
     background: -moz-linear-gradient(top,  rgba(0,0,0,0.62) 0%, rgba(32,32,80,1) 100%);
     background: -webkit-linear-gradient(top,  rgba(0,0,0,0.62) 0%,rgba(32,32,80,1) 100%);
@@ -342,4 +364,69 @@ PORTFOLIO
     -webkit-box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.25);
     box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.25);
+    position: relative;
+
+    .portfolio__box--name {
+        position: absolute;
+        bottom: 90px;
+        left: 0;
+        right: 0;
+        font-family: $font--others;
+        font-size: 1.35em;
+        color: $basic;
+        font-weight: bold;
+        text-align: center;
+        z-index: 200;
+        // display: none;
+
+    }
+    
+    .portfolio__box--description {
+        text-align: center;
+        position: absolute;
+        font-family: $font--others;
+        color: $basic;
+        bottom: 50px;
+        left: 0;
+        right: 0;
+        z-index: 200;
+        // display: none;
+    }
+}
+
+.portfolio__box::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.62) 0%, rgba(32, 32, 80, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.62) 0%, rgba(32, 32, 80, 1) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.62) 0%, rgba(32, 32, 80, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9e000000', endColorstr='#202050', GradientType=0);
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.portfolio__box:hover::after {
+    opacity: 1;
+}
+
+.portfolio__box--1 {
+    background: url(../img/portfolio--1.png) center no-repeat;
+}
+
+.portfolio__box--2 {
+    background: url(../img/portfolio--2.png) center no-repeat;
+}
+
+.portfolio__box--3 {
+    background: url(../img/portfolio--3.png) center no-repeat;
+}
+
+.portfolio__box--4 {
+    background: url(../img/portfolio--4.png) center no-repeat;
 }
