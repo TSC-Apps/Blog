@@ -8,7 +8,7 @@
   background-color: transparent;
   border-radius: 4px;
   cursor: pointer;
-  transition: 0.3s background-color, color, border-color ease-in-out;
+  transition: 0.3s all ease-in-out;
 }
 
 .button--submit {
@@ -42,6 +42,20 @@
 
 .button--blue:hover {
   background: #6C63FF;
+  color: #F2F2F2;
+}
+
+.button--send {
+  border-color: #6C63FF;
+  background: #6C63FF;
+  color: #F2F2F2;
+  font-size: 1.35em;
+  padding: 10px 25px;
+}
+
+.button--send:hover {
+  background: #42E898;
+  border-color: #42E898;
   color: #F2F2F2;
 }
 

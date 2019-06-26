@@ -9,9 +9,24 @@ HEADER
 header {
     overflow: hidden;
     background-color: $blue--darkest;
+    // background: url(../img/header--bg.svg) no-repeat;
+    // background-size: cover;
     // border-bottom-left-radius: 30% 30%;
     // border-bottom-right-radius: 300% 40%;
-    height: 114vh;
+    height: 100vh;
+}
+
+header::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -180px;
+    left: 0;
+    background: url(../img/header--bottom.svg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
 .header__text {
@@ -84,7 +99,7 @@ header {
 
 .vector--3 {
     left: -200px;
-    bottom: -170px;
+    bottom: -20px;
 }
 
 .vector--illustration {
@@ -104,6 +119,10 @@ header {
 ====================================
 BLOG 
 */
+.blog {
+    margin-top: 250px;
+}
+
 .post {
     margin-top: 100px;
     position: relative;
@@ -280,11 +299,14 @@ OFFER
     height: auto;
     padding-bottom: 250px;
     background-color: #403E83;
-    margin-top: 250px;
+    margin-top: 100px;
+    // background: url(../img/offer--bg.svg) no-repeat;
+    // background-size: cover;
     // border-top-right-radius: 30% 30%;
     // border-bottom-left-radius: 10% 10%;
     // border-bottom-right-radius: 30% 50%;
     // border-top-left-radius: 300% 40%;
+    position: relative;
 
     h3, h4 {
         color: $basic;
@@ -293,6 +315,32 @@ OFFER
     h3 {
         padding-top: 80px;
     }
+}
+
+.offer::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -600px;
+    left: 0;
+    background: url(../img/offer--top.svg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.offer::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -140px;
+    left: 0;
+    background: url(../img/offer--bottom.svg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
 .offer__boxes {
@@ -429,4 +477,56 @@ PORTFOLIO
 
 .portfolio__box--4 {
     background: url(../img/portfolio--4.png) center no-repeat;
+}
+
+
+
+/*
+====================================
+CONTACT
+*/
+
+.contact {
+    background: $blue--darkest;
+    background-size: cover;
+    height: 510px;
+    margin-top: -100px;
+    position: relative;
+
+    h3 {
+        color: $basic;
+        padding-top: 165px;
+    }
+
+    .button--send {
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+    }
+}
+
+.contact::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -173px;
+    left: 0;
+    background: url(../img/contact--top.svg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.contact::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -220px;
+    left: 0;
+    background: url(../img/contact--bottom.svg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
