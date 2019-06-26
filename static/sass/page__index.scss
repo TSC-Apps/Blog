@@ -1,10 +1,11 @@
 @import 'variables';
 
+
+
 /* 
 ====================================
 HEADER 
 */
-
 header {
     overflow: hidden;
     background-color: $blue--darkest;
@@ -97,6 +98,8 @@ header {
     height: 100vh;
 }
 
+
+
 /* 
 ====================================
 BLOG 
@@ -169,6 +172,8 @@ BLOG
         margin-top: 80px;
     }
 }
+
+
 
 /*
 ====================================
@@ -243,6 +248,8 @@ PEOPLE
     background: url(../img/people--3.png) center no-repeat;
 }
 
+
+
 /*
 ====================================
 OFFER
@@ -305,4 +312,34 @@ OFFER
 
 .offer__box:nth-child(odd) {
     margin-top: 50px;
+}
+
+
+
+/*
+====================================
+PORTFOLIO
+*/ 
+.portfolio {
+    height: auto;
+    padding-bottom: 250px;
+    margin-top: 150px;
+}
+
+.portfolio__boxes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 150px;
+}
+
+.portfolio__box {
+    width: 640px;
+    border-radius: 4px;
+    height: 400px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    -webkit-box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.25);
 }
