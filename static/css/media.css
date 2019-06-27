@@ -2,7 +2,7 @@
   .container--login {
     position: absolute;
     width: auto;
-    top: 300px;
+    top: 20%;
   }
 }
 @media (max-width: 768px) {
@@ -71,6 +71,7 @@
   }
 
   .header__text {
+    margin-top: 20%;
     position: absolute;
     text-align: center;
     left: 0;
