@@ -34,6 +34,23 @@
   color: #F2F2F2;
 }
 
+.button--active {
+  background: #6C63FF;
+  border-color: #6C63FF;
+  color: #F2F2F2;
+}
+
+.button--category {
+  border-color: #364F61;
+  color: #364F61;
+}
+
+.button--category:hover {
+  background: #6C63FF;
+  border-color: #6C63FF;
+  color: #F2F2F2;
+}
+
 .button--blue {
   border-color: #6C63FF;
   background: #403E83;

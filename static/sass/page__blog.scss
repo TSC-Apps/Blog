@@ -1,0 +1,110 @@
+@import 'variables';
+
+
+
+/* 
+====================================
+BLOG 
+*/
+.blog {
+    margin-top: 250px;
+}
+
+.post {
+    margin-top: 100px;
+    position: relative;
+    width: 800px;
+
+    p {
+        font-weight: lighter;
+    }
+
+    h5:hover {
+        color: $blue--light;
+        text-decoration: underline;
+    }
+}
+
+.post__user {
+    font-family: $font--others;
+    font-size: 0.8em;
+    position: relative;
+}
+
+.post__user--name {
+    font-weight: bold;
+    position: absolute;
+    left: 80px;
+    color: $blue--dark;
+}
+
+.post__user--date {
+    position: absolute;
+    left: 80px;
+    top: 28px;
+}
+
+.post__tag {
+    position: absolute;
+    width: 140px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: $blue--darkest;
+    top: 0;
+    right: 0;
+    font-family: $font--others;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: $basic;
+    border-radius: 4px;
+}
+
+.post__image {
+    -webkit-box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.25);
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+.post__buttons {
+    button {
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+
+    :nth-child(3) {
+        margin-top: 80px;
+    }
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #dddddd;
+    margin-top: 100px;
+    padding: 0;
+}
+
+.categories {
+
+    margin-top: -100px;
+
+    p {
+        font-size: 1.35em;
+        font-weight: bold;
+        font-family: $font--others;
+        color: $blue--dark;
+    }
+
+    button {
+        margin-right: 20px;
+    }
+}
+
+.pagination {
+    margin-top: 100px;
+    text-align: center;
+}

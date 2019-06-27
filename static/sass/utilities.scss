@@ -36,6 +36,23 @@
     color: $basic;
 }
 
+.button--active {
+    background: $blue--light;
+    border-color: $blue--light;
+    color: $basic;
+}
+
+.button--category {
+    border-color: $blue--dark;
+    color: $blue--dark;
+}
+
+.button--category:hover {
+    background: $blue--light;
+    border-color: $blue--light;
+    color: $basic;
+}
+
 .button--blue {
     border-color: $blue--light;
     background: #403E83;
