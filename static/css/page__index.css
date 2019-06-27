@@ -157,6 +157,13 @@ PEOPLE
   right: 0;
   z-index: 200;
 }
+.people__box div, .people__box i {
+  display: none;
+}
+
+.people__box:hover div, .people__box:hover i {
+  display: block;
+}
 
 .people__box::after {
   content: "";
@@ -322,6 +329,13 @@ PORTFOLIO
   left: 0;
   right: 0;
   z-index: 200;
+}
+.portfolio__box div {
+  display: none;
+}
+
+.portfolio__box:hover div {
+  display: block;
 }
 
 .portfolio__box::after {

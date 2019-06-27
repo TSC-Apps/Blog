@@ -9,10 +9,6 @@ HEADER
 header {
     overflow: hidden;
     background-color: $blue--darkest;
-    // background: url(../img/header--bg.svg) no-repeat;
-    // background-size: cover;
-    // border-bottom-left-radius: 30% 30%;
-    // border-bottom-right-radius: 300% 40%;
     height: 100vh;
 }
 
@@ -147,7 +143,6 @@ PEOPLE
         font-size: 1.35em;
         color: $basic;
         z-index: 200;
-        // display: none;
     }
 
     .people__box--name {
@@ -161,7 +156,6 @@ PEOPLE
         font-weight: bold;
         text-align: center;
         z-index: 200;
-        // display: none;
     }
 
     .people__box--function {
@@ -173,7 +167,16 @@ PEOPLE
         left: 0;
         right: 0;
         z-index: 200;
-        // display: none;
+    }
+
+    div, i {
+        display: none;
+    }
+}
+
+.people__box:hover {
+    div, i {
+        display: block;
     }
 }
 
@@ -221,12 +224,6 @@ OFFER
     padding-bottom: 250px;
     background-color: #403E83;
     margin-top: 100px;
-    // background: url(../img/offer--bg.svg) no-repeat;
-    // background-size: cover;
-    // border-top-right-radius: 30% 30%;
-    // border-bottom-left-radius: 10% 10%;
-    // border-bottom-right-radius: 30% 50%;
-    // border-top-left-radius: 300% 40%;
     position: relative;
 
     h3, h4 {
@@ -346,7 +343,6 @@ PORTFOLIO
         font-weight: bold;
         text-align: center;
         z-index: 200;
-        // display: none;
 
     }
     
@@ -359,7 +355,16 @@ PORTFOLIO
         left: 0;
         right: 0;
         z-index: 200;
-        // display: none;
+    }
+
+    div {
+        display: none;
+    }
+}
+
+.portfolio__box:hover {
+    div {
+        display: block;
     }
 }
 
