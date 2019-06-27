@@ -9,7 +9,7 @@ BLOG
 .post {
   margin-top: 100px;
   position: relative;
-  width: 800px;
+  max-width: 100%;
 }
 .post p {
   font-weight: lighter;
@@ -60,6 +60,8 @@ BLOG
   box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.25);
   margin-top: -20px;
   margin-bottom: 30px;
+  max-width: 100%;
+  height: auto;
 }
 
 .post__buttons button {
