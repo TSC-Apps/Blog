@@ -59,6 +59,11 @@ h5 {
     color: $blue--dark;
 }
 
+h6 {
+    font-size: 1.35em;
+    color: $blue--dark;
+}
+
 a {
     text-decoration: none;
 }
@@ -107,11 +112,12 @@ section {
     margin-top: 100px;
 }
 
+
+
 /* 
 ====================================
 TOPBAR 
 */
-
 .topbar {
     width: 100%;
     height: 70px;
@@ -151,21 +157,23 @@ TOPBAR
     margin-left: 20px;
 }
 
-ul {
-    display: inline;
-    list-style: none;
+nav {
+    ul {
+        display: inline;
+        list-style: none;
 
-    li {
-        display: inline-block;
-        padding: 0 20px 0 20px;
-        font-weight: bold;
-        transition: box-shadow 0.3s ease-in-out;
-    }
+        li {
+            display: inline-block;
+            padding: 0 20px 0 20px;
+            font-weight: bold;
+            transition: box-shadow 0.3s ease-in-out;
+        }
 
-    li:hover {
-        -webkit-box-shadow: inset 0 -5px 0 #857DFF;
-        -moz-box-shadow: inset 0 -5px 0 #857DFF;
-        box-shadow: inset 0 -5px 0 #857DFF;
+        li:hover {
+            -webkit-box-shadow: inset 0 -5px 0 #857DFF;
+            -moz-box-shadow: inset 0 -5px 0 #857DFF;
+            box-shadow: inset 0 -5px 0 #857DFF;
+        }
     }
 }
 
@@ -182,7 +190,7 @@ ul {
     top: 70px;
     left: 0;
     right: 0;
-
+    z-index: 1000;
     display: none;
 }
 
@@ -196,6 +204,56 @@ ul {
 
 
 
+/*
+====================================
+FOOTER
+*/
+.footer {
+    margin-top: 220px;
+    font-family: $font--others;
+    color: $blue--dark;
+}
+
+.footer__menu {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    a {
+        color: $blue--dark;
+        font-weight: normal;
+        transition: color 0.3s ease-in-out;
+    }
+
+    a:hover {
+        color: $blue--light;
+        text-decoration: underline;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            display: block;
+            // padding-right: 1.5em;
+            margin-bottom: 1.5em;
+            font-weight: bold;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+    }
+
+    img {
+        padding-right: 10px;
+    }
+}
+
+
+
+/*
+====================================
+Scrollbar
+*/
 ::-webkit-scrollbar {
     width: 5px;
 }

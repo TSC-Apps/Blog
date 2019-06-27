@@ -54,6 +54,11 @@ h5 {
   color: #364F61;
 }
 
+h6 {
+  font-size: 1.35em;
+  color: #364F61;
+}
+
 a {
   text-decoration: none;
 }
@@ -141,17 +146,17 @@ TOPBAR
   margin-left: 20px;
 }
 
-ul {
+nav ul {
   display: inline;
   list-style: none;
 }
-ul li {
+nav ul li {
   display: inline-block;
   padding: 0 20px 0 20px;
   font-weight: bold;
   transition: box-shadow 0.3s ease-in-out;
 }
-ul li:hover {
+nav ul li:hover {
   -webkit-box-shadow: inset 0 -5px 0 #857DFF;
   -moz-box-shadow: inset 0 -5px 0 #857DFF;
   box-shadow: inset 0 -5px 0 #857DFF;
@@ -170,6 +175,7 @@ ul li:hover {
   top: 70px;
   left: 0;
   right: 0;
+  z-index: 1000;
   display: none;
 }
 
@@ -181,6 +187,48 @@ ul li:hover {
   outline: none;
 }
 
+/*
+====================================
+FOOTER
+*/
+.footer {
+  margin-top: 220px;
+  font-family: "Noto Sans", sans-serif;
+  color: #364F61;
+}
+
+.footer__menu {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.footer__menu a {
+  color: #364F61;
+  font-weight: normal;
+  transition: color 0.3s ease-in-out;
+}
+.footer__menu a:hover {
+  color: #6C63FF;
+  text-decoration: underline;
+}
+.footer__menu ul {
+  list-style: none;
+  padding: 0;
+}
+.footer__menu ul li {
+  display: block;
+  margin-bottom: 1.5em;
+  font-weight: bold;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.footer__menu img {
+  padding-right: 10px;
+}
+
+/*
+====================================
+Scrollbar
+*/
 ::-webkit-scrollbar {
   width: 5px;
 }
