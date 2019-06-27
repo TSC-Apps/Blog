@@ -152,15 +152,13 @@ TOPBAR
     .icon--search {
         right: 60px;
     }
-}
 
-.topbar__logo {
-    display: inline-block;
-    margin-left: 20px;
-}
+    .topbar__logo {
+        display: inline-block;
+        margin-left: 20px;
+    }
 
-nav {
-    ul {
+    .navigation--main {
         display: inline;
         list-style: none;
 
