@@ -52,6 +52,7 @@ h4 {
     text-align: center;
     margin-top: -30px;
     font-weight: normal;
+    z-index: 2000;
 }
 
 h5 {
@@ -213,6 +214,7 @@ FOOTER
     margin-top: 220px;
     font-family: $font--others;
     color: $blue--dark;
+    position: relative;
 }
 
 .footer__menu {
