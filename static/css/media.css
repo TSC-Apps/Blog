@@ -2,7 +2,11 @@
   .container--login {
     position: absolute;
     width: auto;
-    top: 20%;
+    top: 50%;
+  }
+
+  .contact h3 {
+    padding-top: 150px;
   }
 }
 @media (max-width: 768px) {
