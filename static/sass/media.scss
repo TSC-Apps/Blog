@@ -14,6 +14,16 @@
             padding-top: 120px;
         }
     }
+
+    .blog {
+        .button--category {
+            margin-bottom: 15px;
+        }
+
+        .post__tag {
+            display: none;
+        }
+    }
 }
 
 @media (max-width: 768px) {

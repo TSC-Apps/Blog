@@ -5,6 +5,9 @@ BLOG
 .blog {
   margin-top: 250px;
 }
+.blog .button--full {
+  margin-top: 100px;
+}
 
 .post {
   margin-top: 100px;

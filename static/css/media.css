@@ -8,6 +8,13 @@
   .contact h3 {
     padding-top: 120px;
   }
+
+  .blog .button--category {
+    margin-bottom: 15px;
+  }
+  .blog .post__tag {
+    display: none;
+  }
 }
 @media (max-width: 768px) {
   .topbar .navigation--main {
