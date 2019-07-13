@@ -1,101 +1,139 @@
 {% extends 'base.html' %}
 
 {% block body %}
-<input class="search" placeholder="What are you looking for? Type in and press enter.">
-</input>
+    <input class="search" placeholder="What are you looking for? Type in and press enter.">
 
-<section class="blog">
-    <div class="container--post">
+    <section class="blog">
+        <div class="container--post">
 
-        <div class="categories">
-            <p>Choose a category</p>
-            <button class="category button button--active">Programming</button>
-            <button class="category button button--category">UX/UI</button>
-            <button class="category button button--category">Electronics</button>
-            <button class="category button button--category">Mathematics</button>
-        </div>
+            <div class="categories">
+                <p>Choose a category</p>
+                <button class="category button button--active">Programming</button>
+                <button class="category button button--category">UX/UI</button>
+                <button class="category button button--category">Electronics</button>
+                <button class="category button button--category">Mathematics</button>
+            </div>
 
-        <div class="post">
-            <div class="post__user">
-                <img src="../static/img/avatar.png" class="post__user--avatar">
-                <span class="post__user--name">
+            <div class="post">
+                <div class="post__user">
+                    <img src="../static/img/avatar.png" class="post__user--avatar">
+                    <span class="post__user--name">
                         Szymon Wiśniewski
                     </span>
-                <span class="post__user--date">
+                    <span class="post__user--date">
                         10 march 2019
                     </span>
+                </div>
+
+                <div class="post__tag">
+                    PROGRAMMING
+                </div>
+
+                <a href="#">
+                    <h5 class="post__title">Ad minim veniam, quis nostrud exercitation ullamco laboris.</h5>
+                </a>
+
+                <img class="post__image" src="../static/img/post__img.png">
+
+                <p class="post__description">
+                    Facilisis volutpat est velit egestas dui id ornare. Condimentum vitae sapien pellentesque
+                    habitant morbi tristique senectus et netus. Rhoncus aenean vel elit scelerisque mauris
+                    pellentesque pulvinar. Faucibus turpis in eu...
+                </p>
+
+                <div class="post__buttons">
+                    <button class="button button--submit" type="submit">READ MORE<i
+                            class="button__icon fas fa-arrow-right"></i></button>
+                    <button class="button button--normal" type="submit">SHARE<i
+                            class="button__icon fas fa-share-alt"></i></button>
+                </div>
             </div>
 
-            <div class="post__tag">
-                PROGRAMMING
-            </div>
+            <hr>
 
-            <a href="#">
-                <h5 class="post__title">Ad minim veniam, quis nostrud exercitation ullamco laboris.</h5>
-            </a>
-
-            <img class="post__image" src="../static/img/post__img.png">
-
-            <p class="post__description">
-                Facilisis volutpat est velit egestas dui id ornare. Condimentum vitae sapien pellentesque
-                habitant morbi tristique senectus et netus. Rhoncus aenean vel elit scelerisque mauris
-                pellentesque pulvinar. Faucibus turpis in eu...
-            </p>
-
-            <div class="post__buttons">
-                <button class="button button--submit" type="submit">READ MORE<i
-                        class="button__icon fas fa-arrow-right"></i></button>
-                <button class="button button--normal" type="submit">SHARE<i
-                        class="button__icon fas fa-share-alt"></i></button>
-            </div>
-        </div>
-
-        <hr>
-
-        <div class="post">
-            <div class="post__user">
-                <img src="../static/img/avatar.png" class="post__user--avatar">
-                <span class="post__user--name">
+            <div class="post">
+                <div class="post__user">
+                    <img src="../static/img/avatar.png" class="post__user--avatar">
+                    <span class="post__user--name">
                         Szymon Wiśniewski
                     </span>
-                <span class="post__user--date">
+                    <span class="post__user--date">
                         10 march 2019
                     </span>
+                </div>
+
+                <div class="post__tag">
+                    PROGRAMMING
+                </div>
+
+                <a href="#">
+                    <h5 class="post__title">Ad minim veniam, quis nostrud exercitation ullamco laboris.</h5>
+                </a>
+
+                <img class="post__image" src="../static/img/post__img.png">
+
+                <p class="post__description">
+                    Facilisis volutpat est velit egestas dui id ornare. Condimentum vitae sapien pellentesque
+                    habitant morbi tristique senectus et netus. Rhoncus aenean vel elit scelerisque mauris
+                    pellentesque pulvinar. Faucibus turpis in eu...
+                </p>
+
+                <div class="post__buttons">
+                    <button class="button button--submit" type="submit">READ MORE<i
+                            class="button__icon fas fa-arrow-right"></i></button>
+                    <button class="button button--normal" type="submit">SHARE<i
+                            class="button__icon fas fa-share-alt"></i></button>
+                </div>
             </div>
 
-            <div class="post__tag">
-                PROGRAMMING
-            </div>
-
-            <a href="#">
-                <h5 class="post__title">Ad minim veniam, quis nostrud exercitation ullamco laboris.</h5>
-            </a>
-
-            <img class="post__image" src="../static/img/post__img.png">
-
-            <p class="post__description">
-                Facilisis volutpat est velit egestas dui id ornare. Condimentum vitae sapien pellentesque
-                habitant morbi tristique senectus et netus. Rhoncus aenean vel elit scelerisque mauris
-                pellentesque pulvinar. Faucibus turpis in eu...
-            </p>
-
-            <div class="post__buttons">
-                <button class="button button--submit" type="submit">READ MORE<i
-                        class="button__icon fas fa-arrow-right"></i></button>
-                <button class="button button--normal" type="submit">SHARE<i
-                        class="button__icon fas fa-share-alt"></i></button>
+            <hr>
+            <div class="pagination">
+                <button class="button button--category">...</button>
+                <button class="button button--category">1</button>
+                <button class="button button--category">2</button>
+                <button class="button button--category">3</button>
+                <button class="button button--category">...</button>
             </div>
         </div>
+    </section>
+    <!-- END OF BLOG -->
 
-        <hr>
-        <div class="pagination">
-            <button class="button button--category">...</button>
-            <button class="button button--category">1</button>
-            <button class="button button--category">2</button>
-            <button class="button button--category">3</button>
-            <button class="button button--category">...</button>
+    <section class="footer">
+        <div class="container">
+            <hr>
+            <div class="footer__menu">
+                <div class="footer__menu--1">
+                    <h6>Sample</h6>
+                    <a href="mailto: mail@gmail.com">mail@gmail.com</a>
+                </div>
+                <div class="footer__menu--2">
+                    <h6>Menu</h6>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Authors</a></li>
+                        <li><a href="#">Offer</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__menu--3">
+                    <h6>Latest Posts</h6>
+                    <ul>
+                        <li><a href="#">Ad minim veniam, quis nostrud
+                            exercitation ullamco laboris.</a></li>
+                        <li><a href="#">Duis aute irure dolor in reprehenderit.</a></li>
+                        <li><a href="#">In voluptate velit esse.</a></li>
+                    </ul>
+                </div>
+                <div class="footer__menu--4">
+                    <h6>Social Media</h6>
+                    <a href="#"><img src="../static/img/icon--fb.svg" alt=""></a>
+                    <a href="#"><img src="../static/img/icon--twitter.svg" alt="">
+                    </a>
+                    <a href="#"><img src="../static/img/icon--instagram.svg" alt=""></a>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
-<!-- END OF BLOG -->
+    </section>
+    <!-- END OF FOOTER -->
 {% endblock %}
