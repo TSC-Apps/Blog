@@ -1,5 +1,6 @@
 from django.db import models
 from django.conf import settings
+from tinymce.models import HTMLField
 
 # Create your models here.
 
@@ -12,4 +13,8 @@ class BlogPost(models.Model):
 
     # slug title of blog post in url
     slug = models.SlugField(unique=True)
-    content = models.TextField(null=True, blank=True)
+    content = HTMLField()
+
+    # displays title instead of object in django admin
+    def __str__(self):
+        return self.title
