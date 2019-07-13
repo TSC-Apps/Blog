@@ -1,0 +1,74 @@
+@import 'variables';
+
+body {
+    background-color: $blue--darkest;
+}
+
+.container--login {
+    position: absolute;
+    width: auto;
+    top: 440px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login__input {
+    display: block;
+    margin: 20px auto;
+    width: 400px;
+}
+
+.button--login {
+    position: absolute;
+    right: 0;
+    border-color: $blue--light;
+    color: $basic;
+}
+
+.button--login:hover {
+    border-color: $green;
+}
+
+.login__issues {
+    font-family: $font--others;
+    font-weight: bold;
+    font-size: 14px;
+    color: $blue--dark;
+
+    a {
+        color: $basic;
+        transition: 0.3s color ease-in-out;
+        line-height: 40px;
+    }
+
+    a:hover {
+        color: $green;
+    }
+}
+
+.vector {
+    position: absolute;
+}
+
+.vector--1 {
+    right: 500px;
+    top: 300px;
+}
+
+.vector--2 {
+    right: -200px;
+    top: -120px;
+}
+
+.vector--3 {
+    left: -300px;
+    bottom: -250px;
+}
+
+.vectors--login {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}

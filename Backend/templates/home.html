@@ -1,0 +1,227 @@
+{% extends "base.html" %}
+
+{% block body %}
+    <header>
+        <div class="container">
+            <div class="header__text">
+                <h1>Nice to meet you.</h1>
+                <h2>This is a place where you can broaden your horizonts at programming, UX/UI design and electronics.
+                </h2>
+                <button class="button button--submit button--header" type="submit">GET TO KNOW US<i
+                        class="button__icon fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+
+        <div class="vectors--header">
+            <img class="vector vector--illustration" src="../static/img/header__illustration.svg">
+            <img class="vector vector--1" src="../static/img/vector-2.svg">
+            <img class="vector vector--2" src="../static/img/vector-1.svg">
+            <img class="vector vector--3" src="../static/img/vector-1.svg">
+        </div>
+
+        <div class="scrolldown"></div>
+    </header>
+    <!-- END OF HEADER -->
+
+    <section class="blog">
+        <div class="container--post">
+            <h3>Blog</h3>
+            <h4>latest entry</h4>
+            <div class="post">
+                <div class="post__user">
+                    <img src="../static/img/avatar.png" class="post__user--avatar">
+                    <span class="post__user--name">
+                        Szymon Wiśniewski
+                    </span>
+                    <span class="post__user--date">
+                        10 march 2019
+                    </span>
+                </div>
+
+                <div class="post__tag">
+                    PROGRAMMING
+                </div>
+
+                <a href="#"><h5 class="post__title">Ad minim veniam, quis nostrud exercitation ullamco laboris.</h5></a>
+
+                <img class="post__image" src="../static/img/post__img.png">
+
+                <p class="post__description">
+                    Facilisis volutpat est velit egestas dui id ornare. Condimentum vitae sapien pellentesque
+                    habitant morbi tristique senectus et netus. Rhoncus aenean vel elit scelerisque mauris
+                    pellentesque pulvinar. Faucibus turpis in eu...
+                </p>
+
+                <div class="post__buttons">
+                    <button class="button button--submit" type="submit">READ MORE<i
+                            class="button__icon fas fa-arrow-right"></i></button>
+                    <button class="button button--normal" type="submit">SHARE<i
+                            class="button__icon fas fa-share-alt"></i></button>
+
+                    <a href="../templates/blog.html">
+                        <button class="button button--full" type="submit">Go to blog</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OF BLOG -->
+
+    <section class="people" id="team">
+        <h3>People</h3>
+        <h4>in charge of this site</h4>
+        <div class="container--people">
+            <div class="people__box people__box--1">
+                <div class="people__box--icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-github"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+                <div class="people__box--name">
+                    John Doe
+                </div>
+                <div class="people__box--function">
+                    CEO
+                </div>
+            </div>
+
+            <div class="people__box people__box--2">
+                <div class="people__box--icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-github"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+                <div class="people__box--name">
+                    Freddie Mercury
+                </div>
+                <div class="people__box--function">
+                    programmer
+                </div>
+            </div>
+
+            <div class="people__box people__box--3">
+                <div class="people__box--icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-github"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+                <div class="people__box--name">
+                    Mary Jane
+                </div>
+                <div class="people__box--function">
+                    designer
+                </div>
+            </div>
+        </div>
+        <img src="../static/img/vector--3.svg" class="vector vector--4">
+    </section>
+    <!-- END OF PEOPLE -->
+
+    <section class="offer" id="offer">
+        <div class="container--offer">
+            <h3>Offer</h3>
+            <h4>we are confident in</h4>
+
+            <div class="offer__boxes">
+                <div class="offer__box">
+                    <span class="offer__box--title">
+                        We are blogging.
+                    </span>
+                    <p class="offer__box--description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et
+                        dolore magna
+                        aliqua.
+                    </p>
+                    <button class="button button--blue" type="submit">READ MORE<i
+                            class="button__icon fas fa-arrow-right"></i></button>
+                </div>
+                <div class="offer__box">
+                    <span class="offer__box--title">
+                        Available for hire.
+                    </span>
+                    <p class="offer__box--description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et
+                        dolore magna
+                        aliqua.
+                    </p>
+                    <button class="button button--blue" type="submit">READ MORE<i
+                            class="button__icon fas fa-arrow-right"></i></button>
+                </div>
+                <div class="offer__box">
+                    <span class="offer__box--title">
+                        We are programming.
+                    </span>
+                    <p class="offer__box--description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et
+                        dolore magna
+                        aliqua.
+                    </p>
+                    <button class="button button--blue" type="submit">READ MORE<i
+                            class="button__icon fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OF OFFER -->
+
+
+    <section class="portfolio" id="projects">
+        <div class="container--portfolio">
+            <h3>Portfolio</h3>
+            <h4>projects we are proud of</h4>
+
+            <div class="portfolio__boxes">
+                <div class="portfolio__box portfolio__box--1">
+                    <div class="portfolio__box--name">
+                        FB Redesign
+                    </div>
+                    <div class="portfolio__box--description">
+                        DESIGN
+                    </div>
+                </div>
+
+                <div class="portfolio__box portfolio__box--2">
+                    <div class="portfolio__box--name">
+                        Kancelaria Chmielewscy
+                    </div>
+                    <div class="portfolio__box--description">
+                        HTML / CSS / JS / SEO / DESIGN
+                    </div>
+                </div>
+
+                <div class="portfolio__box portfolio__box--3">
+                    <div class="portfolio__box--name">
+                        homeBrain
+                    </div>
+                    <div class="portfolio__box--description">
+                        FLASK / HTML / CSS / JS / DESIGN
+                    </div>
+                </div>
+
+                <div class="portfolio__box portfolio__box--4">
+                    <div class="portfolio__box--name">
+                        SeedMed
+                    </div>
+                    <div class="portfolio__box--description">
+                        WordPress / HTML / CSS / JS / SEO / DESIGN
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="../static/img/vector--4.svg" class="vector vector--5">
+    </section>
+    <!-- END OF PORTFOLIO -->
+
+    <section class="contact" id="contact">
+        <div class="container--post">
+            <h3>Any questions? Simply ask us,
+                we will answer as soon as possible.</h3>
+
+            <button class="button button--send">Send Mail</button>
+        </div>
+    </section>
+    <!-- END OF PORTFOLIO -->
+{% endblock %}

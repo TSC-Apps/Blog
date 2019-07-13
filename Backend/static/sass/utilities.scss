@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Noto+Sans');
+@import 'variables';
+
+.button {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    border: 2px solid transparent;
+    padding: 10px 15px 10px 15px;
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+.button--submit {
+    border-color: $green;
+    color: $blue--dark;
+}
+
+.button--submit:hover {
+    background-color: $green;
+}
+
+.button__icon {
+    margin-left: 20px;
+}
+
+.button--normal {
+    border-color: $blue--darkest;
+    color: $blue--darkest;
+}
+
+.button--normal:hover {
+    background: $blue--darkest;
+    color: $basic;
+}
+
+.button--active {
+    background: $blue--light;
+    border-color: $blue--light;
+    color: $basic;
+}
+
+.button--category {
+    border-color: $blue--dark;
+    color: $blue--dark;
+}
+
+.button--category:hover {
+    background: $blue--light;
+    border-color: $blue--light;
+    color: $basic;
+}
+
+.button--blue {
+    border-color: $blue--light;
+    background: #403E83;
+    color: $basic;
+}
+
+.button--blue:hover {
+    background: $blue--light;
+    color: $basic;
+}
+
+.button--send {
+    border-color: $blue--light;
+    background: $blue--light;
+    color: $basic;
+    font-size: 1.35em;
+    padding: 10px 25px;
+}
+
+.button--send:hover {
+    background: $green;
+    border-color: $green;
+    color: $basic;
+}
+
+.button--full {
+    display: block;
+    width: 100%;
+    background: $blue--light;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: $basic;
+}
+
+.button--full:hover {
+    background: $green;
+}

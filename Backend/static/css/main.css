@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather|Noto+Sans");
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Merriweather", serif;
+  font-weight: lighter;
+  font-size: 18px;
+  color: #64708F;
+  background-color: #F2F2F2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  z-index: 500;
+}
+
+h1 {
+  font-size: 3.5em;
+  text-align: center;
+  color: #F2F2F2;
+}
+
+h2 {
+  font-size: 1.4em;
+  font-weight: normal;
+  color: #F2F2F2;
+}
+
+h3 {
+  font-size: 2.7em;
+  color: #364F61;
+  text-align: center;
+}
+
+h4 {
+  font-size: 1.35em;
+  text-align: center;
+  margin-top: -30px;
+  font-weight: normal;
+  z-index: 2000;
+}
+
+h5 {
+  font-size: 2em;
+  color: #364F61;
+}
+
+h6 {
+  font-size: 1.35em;
+  color: #364F61;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  line-height: 188%;
+}
+
+input {
+  font-family: "Noto Sans", sans-serif;
+  color: #364F61;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.container--post {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container--people {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.container--offer {
+  width: 98%;
+  margin: 0 auto;
+}
+
+.container--portfolio {
+  width: 73%;
+  margin: 0 auto;
+}
+
+section {
+  margin-top: 100px;
+}
+
+/* 
+====================================
+TOPBAR 
+*/
+.topbar {
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #6C63FF;
+  color: #F2F2F2;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  line-height: 70px;
+  font-size: 14px;
+  position: absolute;
+  z-index: 1000;
+  position: fixed;
+}
+.topbar a {
+  color: #F2F2F2;
+}
+.topbar .icon {
+  position: absolute;
+  font-size: 18px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.topbar .icon--user {
+  right: 20px;
+}
+.topbar .icon--search {
+  right: 60px;
+}
+.topbar .topbar__logo {
+  display: inline-block;
+  margin-left: 20px;
+}
+.topbar .navigation--main {
+  display: inline;
+  list-style: none;
+}
+.topbar .navigation--main li {
+  display: inline-block;
+  padding: 0 20px 0 20px;
+  font-weight: bold;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.topbar .navigation--main li:hover {
+  -webkit-box-shadow: inset 0 -5px 0 #857DFF;
+  -moz-box-shadow: inset 0 -5px 0 #857DFF;
+  box-shadow: inset 0 -5px 0 #857DFF;
+}
+
+.search {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 100px;
+  text-align: center;
+  color: #F2F2F2;
+  background-color: #374D9E;
+  width: 100%;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: none;
+}
+
+.search::placeholder {
+  color: #F2F2F2;
+}
+
+.search {
+  outline: none;
+}
+
+/*
+====================================
+FOOTER
+*/
+.footer {
+  margin-top: 220px;
+  font-family: "Noto Sans", sans-serif;
+  color: #364F61;
+  position: relative;
+}
+
+.footer__menu {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.footer__menu a {
+  color: #364F61;
+  font-weight: normal;
+  transition: color 0.3s ease-in-out;
+}
+.footer__menu a:hover {
+  color: #6C63FF;
+  text-decoration: underline;
+}
+.footer__menu ul {
+  list-style: none;
+  padding: 0;
+}
+.footer__menu ul li {
+  display: block;
+  margin-bottom: 1.5em;
+  font-weight: bold;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.footer__menu img {
+  padding-right: 10px;
+}
+
+/*
+====================================
+Scrollbar
+*/
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #E3E3E3;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6C63FF;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #201F44;
+}
+
+/*# sourceMappingURL=main.css.map */

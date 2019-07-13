@@ -16,12 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from blog.views import blog_post_create_view
+from .views import home_page
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', home_page),
     path('blog-new/', blog_post_create_view),
 
-    # all urls from blog app
+    # all urls from blog app, which is plugable app module
     # first arguments sets it like this: blog/edit...
     path('blog/', include('blog.urls'))
 ]
