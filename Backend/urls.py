@@ -19,7 +19,7 @@ from .views import home_page
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home_page),
+    path('', home_page, name='home-page'),
     re_path(r'^tinymce/', include('tinymce.urls')),
 
     # all urls from blog app, which is plugable app module

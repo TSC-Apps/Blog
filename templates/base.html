@@ -18,21 +18,21 @@
 <body>
 
 <nav class="topbar">
-    <div class="topbar__logo"><a href="../templates/index.html">Sample</a></div>
+    <div class="topbar__logo"><a href="{% url 'home-page' %}">Sample</a></div>
     <ul class="navigation--main">
-        <a href="../templates/blog.html">
+        <a href="{% url 'blog' %}">
             <li>BLOG</li>
         </a>
-        <a href="#projects">
+        <a href="{% url 'home-page' %}#projects">
             <li>PROJECTS</li>
         </a>
-        <a href="#team">
+        <a href="{% url 'home-page' %}#team">
             <li>TEAM</li>
         </a>
-        <a href="#offer">
+        <a href="{% url 'home-page' %}#offer">
             <li>OFFER</li>
         </a>
-        <a href="#contact">
+        <a href="{% url 'home-page' %}#contact">
             <li>CONTACT</li>
         </a>
     </ul>
