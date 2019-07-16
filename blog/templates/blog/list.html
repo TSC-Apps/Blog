@@ -27,7 +27,7 @@
                     </div>
 
                     <div class="post__tag">
-                        PROGRAMMING
+                        {{ post.article_type | safe}}
                     </div>
 
                     <a href="#">
@@ -37,7 +37,7 @@
                     <img class="post__image" src="../static/img/post__img.png">
 
                     <p class="post__description">
-                        {{ post.content | safe }}
+                        {{ post.description | safe }}
                     </p>
 
                     <div class="post__buttons">

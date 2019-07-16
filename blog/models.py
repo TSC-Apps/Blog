@@ -13,6 +13,10 @@ class BlogPost(models.Model):
 
     # slug title of blog post in url
     slug = models.SlugField(unique=True)
+    description = models.TextField(blank=True)
+
+    article_types = [('Programming', 'Programming'), ('UX/UI', 'UX/UI'), ('Electronics', 'Electronics'), ('Other', 'Other')]
+    article_type = models.CharField(max_length=20, choices=article_types, default='Programming')
     content = HTMLField()
 
     # displays title instead of object in django admin
