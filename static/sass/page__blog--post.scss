@@ -1,0 +1,110 @@
+@import 'variables';
+
+.container--post p {
+    color: $blue--gray;
+    line-height: 2.1em;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.container--post h2, .container--post h3 {
+    text-align: left;
+    color: $blue--gray;
+    font-weight: bold;
+    padding: 20px 0 10px 0;
+}
+
+
+.container--post h2 {
+    font-size: 1.8em;
+}
+
+.container--post h3 {
+    font-size: 1.5em;
+}
+
+.container--post .quote {
+    padding: 20px 0 20px 40px;
+    margin: 50px 0 50px -10px;
+    display: block;
+    border-left: 4px solid $blue--light;
+}
+
+.container--post ul {
+    list-style: none;
+}
+
+.container--post li {
+    position: relative;
+    padding: 8px;
+}
+
+.container--post li::before {
+    content: "";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    width: 6px;
+    height: 6px;
+    background-color: $blue--light;
+    position: absolute;
+    border-radius: 100%;
+    left: -15px;
+    top: 14px;
+}
+
+.container--post a {
+    color: $blue--light;
+}
+
+.container--post a:hover{
+    opacity: 0.9;
+}
+
+.container--post a:visited{
+    color: $blue--light;
+}
+
+.container--post .post--image {
+    padding: 30px 0;
+}
+
+
+body .gist .gist-file {
+    margin: 30px 0;
+    border-radius: 4px;
+}
+
+body .gist .gist-data {
+    border-bottom: none;
+    border-radius: 0;
+    background-color: #f1f3f5;
+}
+
+body .gist .blob-wrapper {
+    border-radius: 0;
+}
+
+body .gist .highlight {
+    background-color: transparent;
+    font-family: 'Droid Sans Mono', monospace;
+    font-size: 14px;
+}
+
+body .gist .highlight td {
+    padding: 5px 15px !important;
+    line-height: 1;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+body .gist tr:first-child td {
+    padding-top: 15px !important;
+}
+
+body .gist tr:last-child td {
+    padding-bottom: 15px !important;
+}
+
+body .gist .gist-meta {
+    display: none;
+}
