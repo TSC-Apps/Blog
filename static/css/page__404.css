@@ -1,0 +1,39 @@
+body {
+  background-color: #201F44;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: #F2F2F2;
+}
+
+h1 {
+  font-size: 6em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 9em;
+  opacity: 0.01;
+  position: absolute;
+  margin: auto;
+  top: -80px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.container--404 {
+  height: 50%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/*# sourceMappingURL=page__404.css.map */
