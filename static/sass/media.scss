@@ -92,17 +92,12 @@
     .offer__box {
         margin-bottom: 80px;
     }
-
-    .offer__box:nth-child(odd) {
-        margin-top: 0;
-    }
 }
 
 @media (max-width: 1200px) {
-
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1600px) {
     header {
         .vector {
             display: none;
@@ -110,7 +105,7 @@
     }
 
     .header__text {
-        margin-top: 20%;
+        margin-top: 15%;
         position: absolute;
         text-align: center;
         left: 0;
@@ -131,5 +126,19 @@
 
     .scrolldown {
         display: none;
+    }
+}
+
+@media (max-width: 1800px) {
+    .offer__box {
+        margin-bottom: 80px;
+    }
+
+    .container--offer {
+        width: 80%;
+    }
+
+    .offer__box:nth-child(odd) {
+        margin-top: 0;
     }
 }

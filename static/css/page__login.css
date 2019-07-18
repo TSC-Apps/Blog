@@ -20,7 +20,7 @@ body {
   position: absolute;
   right: 0;
   border-color: #6C63FF;
-  color: #F2F2F2;
+  color: white;
 }
 
 .button--login:hover {
@@ -34,7 +34,7 @@ body {
   color: #364F61;
 }
 .login__issues a {
-  color: #F2F2F2;
+  color: white;
   transition: 0.3s color ease-in-out;
   line-height: 40px;
 }
