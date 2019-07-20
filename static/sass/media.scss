@@ -79,8 +79,6 @@
 }
 
 @media (max-width: 992px) {
-
-
     .blog {
         margin-top: 180px;
     }
@@ -91,6 +89,32 @@
 
     .offer__box {
         margin-bottom: 80px;
+    }
+
+    .author--img {
+        margin: 0 auto;
+    }
+
+    .author--info {
+        width: 100%;
+        .author--icons {
+            margin: 20px 0 !important;
+            padding: 0 !important;
+            text-align: center !important;
+            color: $blue--dark !important;
+        }
+
+        .author--skills {
+            margin: 20px 0 !important;
+            padding: 0 !important;
+            text-align: center !important;
+            color: $blue--dark !important;
+        }
+        
+        h3, h4 {
+            text-align: center !important;
+            color: $blue--dark !important;
+        }
     }
 }
 

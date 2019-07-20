@@ -73,6 +73,30 @@
   .offer__box {
     margin-bottom: 80px;
   }
+
+  .author--img {
+    margin: 0 auto;
+  }
+
+  .author--info {
+    width: 100%;
+  }
+  .author--info .author--icons {
+    margin: 20px 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+    color: #364F61 !important;
+  }
+  .author--info .author--skills {
+    margin: 20px 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+    color: #364F61 !important;
+  }
+  .author--info h3, .author--info h4 {
+    text-align: center !important;
+    color: #364F61 !important;
+  }
 }
 @media (max-width: 1600px) {
   header .vector {

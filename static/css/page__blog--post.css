@@ -40,7 +40,6 @@ strong {
 
 .container--post li::before {
   content: "";
-  /* Add content: \2022 is the CSS Code/unicode for a bullet */
   width: 6px;
   height: 6px;
   background-color: #6C63FF;
