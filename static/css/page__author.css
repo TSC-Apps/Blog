@@ -1,0 +1,110 @@
+.author--flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px auto;
+  justify-content: space-between;
+  background: #fdfdfd;
+  -webkit-box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.25);
+  padding: 50px;
+  border-radius: 4px;
+}
+.author--flex .author__box {
+  max-width: 450px;
+  height: auto;
+  position: relative;
+  display: block;
+}
+.author--flex .author__box h5 {
+  margin: 0;
+}
+.author--flex .author__box ul {
+  list-style: none;
+  padding: 0;
+}
+.author--flex .author__box ul li {
+  position: relative;
+  margin-bottom: 18px;
+}
+.author--flex .author__box ul li span {
+  font-weight: bold;
+  opacity: 0.5;
+}
+.author--flex .author__box ul a {
+  color: #364F61;
+}
+.author--flex .author__box ul a:hover {
+  opacity: 0.9;
+}
+.author--flex .author__box ul a:visited {
+  color: #6C63FF;
+}
+.author--flex h3, .author--flex h4 {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.author .author--basic {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.author .author--basic h3, .author .author--basic h4 {
+  text-align: left;
+  color: white;
+  font-size: 2.5em;
+  line-height: normal;
+}
+.author .author--basic h3 {
+  margin: 20px 50px 0 50px;
+}
+.author .author--basic h4 {
+  font-size: 1.5em;
+  margin: 20px 50px 0 50px;
+}
+.author .author--basic .author--img {
+  border-radius: 4px;
+  height: 500px;
+}
+.author .author--basic .author--icons {
+  margin-left: 50px;
+  margin-top: 100px;
+  font-size: 1.5em;
+  color: white;
+  opacity: 0.5;
+}
+.author .author--basic .author--skills {
+  margin-left: 50px;
+  margin-top: 60px;
+  font-size: 2em;
+  color: white;
+}
+.author .container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  z-index: -1;
+  background-color: #403E83;
+}
+.author .container::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 120px;
+  left: 0;
+  background: url(../img/offer--top.svg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+}
+
+/*# sourceMappingURL=page__author.css.map */

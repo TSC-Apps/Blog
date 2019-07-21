@@ -31,13 +31,13 @@
 
 .button--normal:hover {
   background: #201F44;
-  color: #F2F2F2;
+  color: white;
 }
 
 .button--active {
   background: #6C63FF;
   border-color: #6C63FF;
-  color: #F2F2F2;
+  color: white;
 }
 
 .button--category {
@@ -48,24 +48,24 @@
 .button--category:hover {
   background: #6C63FF;
   border-color: #6C63FF;
-  color: #F2F2F2;
+  color: white;
 }
 
 .button--blue {
   border-color: #6C63FF;
   background: #403E83;
-  color: #F2F2F2;
+  color: white;
 }
 
 .button--blue:hover {
   background: #6C63FF;
-  color: #F2F2F2;
+  color: white;
 }
 
 .button--send {
   border-color: #6C63FF;
   background: #6C63FF;
-  color: #F2F2F2;
+  color: white;
   font-size: 1.35em;
   padding: 10px 25px;
 }
@@ -73,7 +73,7 @@
 .button--send:hover {
   background: #42E898;
   border-color: #42E898;
-  color: #F2F2F2;
+  color: white;
 }
 
 .button--full {
@@ -82,7 +82,7 @@
   background: #6C63FF;
   font-size: 1.2em;
   font-weight: bold;
-  color: #F2F2F2;
+  color: white;
 }
 
 .button--full:hover {
