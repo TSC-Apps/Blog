@@ -3,4 +3,8 @@ from django.shortcuts import render
 
 
 def home_page(request):
-    return render(request, "home.html")
+    return render(request, 'home.html')
+
+
+def author_page(request):
+    return render(request, 'author.html')

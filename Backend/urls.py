@@ -15,11 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, re_path, include
-from .views import home_page
+from .views import home_page, author_page
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home_page, name='home-page'),
+    path('author', author_page, name='author'),
     re_path(r'^tinymce/', include('tinymce.urls')),
 
     # all urls from blog app, which is plugable app module
