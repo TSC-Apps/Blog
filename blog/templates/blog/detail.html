@@ -15,121 +15,23 @@
                 <div class="post__user">
                     <img src="../../../static/img/avatar.png" class="post__user--avatar">
                     <span class="post__user--name">
-                        Szymon Wiśniewski
+                        {{ object.user }}
                     </span>
                     <span class="post__user--date">
-                        10 march 2019
+                        {{ object.date }}
                     </span>
                 </div>
 
                 <div class="post__tag">
-                    PROGRAMMING
+                    {{ object.article_type }}
                 </div>
 
                 <a href="#">
-                    <h5 class="post__title">Ad minim veniam, quis nostrud exercitation ullamco laboris.</h5>
+                    <h5 class="post__title">{{ object.title }}</h5>
                 </a>
 
-                <img class="post__image" src="../../../static/img/post__img.png">
-
-                <h2>This is sample heading 2</h2>
-
                 <p>
-                    Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Tincidunt augue interdum velit euismod in pellentesque
-                    massa placerat. Orci phasellus egestas tellus rutrum tellus. Congue nisi vitae suscipit tellus
-                    mauris a. Adipiscing elit duis tristique sollicitudin nibh. Iaculis at erat pellentesque adipiscing.
-                    Faucibus <a href="#">pulvinar elementum integer enim</a>. Felis imperdiet proin fermentum leo. Magna
-                    fringilla urna porttitor rhoncus dolor purus non. Id cursus metus aliquam eleifend mi in nulla. Sed
-                    blandit libero volutpat sed cras ornare arcu dui. Sed tempus urna et pharetra pharetra massa.
-                </p>
-
-                <span class="quote">
-                    Quote test. Felis donec et odio pellentesque diam volutpat. Tempor commodo ullamcorper a lacus vestibulum.
-                </span>
-
-                <script src="https://gist.github.com/szymwisn/78f3fe5a8b78743a285566195eab684c.js"></script>
-
-                <p>
-                    Consequat ac felis donec et odio pellentesque diam volutpat. Tempor commodo ullamcorper a lacus
-                    vestibulum. Quam vulputate dignissim suspendisse in est. Aliquet lectus proin nibh nisl condimentum
-                    id venenatis. Commodo ullamcorper a lacus vestibulum sed arcu. Dignissim suspendisse in est ante in
-                    nibh. Neque aliquam vestibulum morbi blandit. Facilisis leo vel fringilla est ullamcorper eget nulla
-                    facilisi etiam. Quam vulputate dignissim suspendisse in est ante in nibh. Porttitor leo a diam
-                    sollicitudin tempor id eu nisl nunc. Leo integer malesuada nunc vel risus commodo. Ultricies leo
-                    integer malesuada nunc vel. Diam sit amet nisl suscipit adipiscing bibendum est ultricies integer.
-                    Lorem sed risus ultricies tristique nulla aliquet. Dolor sit amet consectetur adipiscing elit duis
-                    tristique sollicitudin nibh.
-                </p>
-
-                <p>Unordered list</p>
-                <ul class="u-list">
-                    <li class="li-entry">lorem ipsum dolor</li>
-                    <li class="li-entry">sample</li>
-                    <li class="li-entry">sit amet dolor</li>
-                    <li class="li-entry">test</li>
-                </ul>
-
-                <h3>This is sample heading 3</h3>
-                <p>
-                    In ante metus dictum at tempor commodo. In egestas erat imperdiet sed. Pellentesque sit amet
-                    porttitor eget dolor morbi. <a href="#">Ullamcorper eget nulla</a> facilisi etiam dignissim diam
-                    quis enim lobortis. Nisl condimentum id venenatis a condimentum vitae. Risus nec feugiat in
-                    fermentum posuere urna. Cursus in hac habitasse platea dictumst quisque sagittis purus. Habitasse
-                    platea dictumst quisque sagittis purus. Tempus urna et pharetra pharetra massa massa. Auctor neque
-                    vitae tempus quam. Eget arcu dictum varius duis at consectetur lorem donec massa. Mi proin sed
-                    libero enim sed faucibus turpis. Aliquet risus feugiat in ante metus dictum at. Facilisis volutpat
-                    est velit egestas dui id ornare. Platea dictumst quisque sagittis purus sit amet volutpat consequat
-                    mauris. Velit dignissim sodales ut eu sem integer vitae. Dolor sed viverra ipsum nunc aliquet.
-                </p>
-
-                <h3>Another H3 heading</h3>
-                <p>
-                    Orci sagittis eu volutpat odio facilisis. Massa ultricies mi quis hendrerit. Imperdiet sed euismod
-                    nisi porta. Lectus magna fringilla urna porttitor rhoncus. Eu facilisis sed odio morbi quis. Risus
-                    feugiat in ante metus dictum at tempor. Quam quisque id diam vel quam elementum pulvinar etiam. Nec
-                    ultrices dui sapien eget mi. Mattis pellentesque id nibh tortor id aliquet lectus proin. Eu nisl
-                    nunc mi ipsum. Gravida quis blandit turpis cursus in hac habitasse platea dictumst. Metus aliquam
-                    eleifend mi in. Tristique magna sit amet purus. Accumsan sit amet nulla facilisi morbi tempus
-                    iaculis urna id. Quisque non tellus orci ac auctor augue mauris. Vitae ultricies leo integer
-                    malesuada nunc vel risus commodo viverra. Egestas maecenas pharetra convallis posuere morbi. Ac odio
-                    tempor orci dapibus ultrices in iaculis. Scelerisque in dictum non consectetur.
-                </p>
-
-                <p>
-                    Tellus id interdum velit laoreet id donec ultrices. Proin sagittis nisl rhoncus mattis rhoncus urna
-                    neque viverra. Ornare arcu odio ut sem nulla. Sit amet consectetur adipiscing elit pellentesque.
-                    Volutpat consequat mauris nunc congue nisi vitae suscipit. Pellentesque habitant morbi tristique
-                    senectus et netus et malesuada fames. Enim nec dui nunc mattis enim ut. Nunc sed id semper risus in
-                    hendrerit gravida rutrum. Non sodales neque sodales ut etiam sit amet. Pellentesque pulvinar
-                    pellentesque habitant morbi tristique senectus et netus. Commodo nulla facilisi nullam vehicula
-                    ipsum a. Praesent semper feugiat nibh sed pulvinar proin.
-                </p>
-
-                <img class="post--image" src="../../../static/img/post__img.png">
-
-                <p>
-                    Aenean et tortor at risus. Quis risus sed vulputate odio. Laoreet sit amet cursus sit. Consequat
-                    nisl vel pretium lectus. Tristique et egestas quis ipsum suspendisse ultrices gravida. Nec feugiat
-                    in fermentum posuere urna. Scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis.
-                    Sed libero enim sed faucibus turpis. Nunc eget lorem dolor sed viverra. Aliquam nulla facilisi cras
-                    fermentum odio eu feugiat. Scelerisque purus semper eget duis at tellus at. Augue lacus viverra
-                    vitae congue eu consequat. Integer malesuada nunc vel risus.
-                </p>
-
-                <script src="https://gist.github.com/szymwisn/78f3fe5a8b78743a285566195eab684c.js"></script>
-
-                <p>
-                    Scelerisque viverra mauris in aliquam sem fringilla. Amet tellus cras adipiscing enim eu turpis
-                    egestas pretium aenean. Ultrices gravida dictum fusce ut placerat orci. Et netus et malesuada fames
-                    ac turpis egestas. A arcu cursus vitae congue mauris rhoncus aenean. Augue interdum velit euismod in
-                    pellentesque massa placerat duis. Turpis massa tincidunt dui ut. Dictum at tempor commodo
-                    ullamcorper a lacus vestibulum. Non consectetur a erat nam. Mauris cursus mattis molestie a iaculis
-                    at erat pellentesque adipiscing. Diam donec adipiscing tristique risus. Adipiscing enim eu turpis
-                    egestas pretium aenean pharetra. Amet venenatis urna cursus eget nunc scelerisque. Et odio
-                    pellentesque diam volutpat commodo sed egestas egestas. Consectetur a erat nam at lectus. Potenti
-                    nullam ac tortor vitae purus faucibus ornare suspendisse. Eget duis at tellus at urna condimentum
-                    mattis pellentesque id.
+                    {{ object.content | safe}}
                 </p>
 
                 <div class="post__buttons">
