@@ -13,10 +13,11 @@
         </div>
 
         <div class="vectors--header">
-            <img class="vector vector--illustration" src="../static/img/header__illustration.svg">
-            <img class="vector vector--1" src="../static/img/vector-2.svg">
-            <img class="vector vector--2" src="../static/img/vector-1.svg">
-            <img class="vector vector--3" src="../static/img/vector-1.svg">
+            {% load static %}
+            <img class="vector vector--illustration" src="{% static "img/header__illustration.svg" %}" alt="">
+            <img class="vector vector--1" src="{% static "img/vector-2.svg" %}" alt="">
+            <img class="vector vector--2" src="{% static "img/vector-1.svg" %}" alt="">
+            <img class="vector vector--3" src="{% static "img/vector-1.svg" %}" alt="">
         </div>
 
         <div class="scrolldown"></div>
@@ -29,7 +30,7 @@
             <h4>latest entry</h4>
             <div class="post">
                 <div class="post__user">
-                    <img src="../static/img/avatar.png" class="post__user--avatar">
+                    <img src="{% static "img/avatar.png" %}" class="post__user--avatar" alt="">
                     <span class="post__user--name">
                         Szymon Wiśniewski
                     </span>
@@ -44,7 +45,7 @@
 
                 <a href="#"><h5 class="post__title">Ad minim veniam, quis nostrud exercitation ullamco laboris.</h5></a>
 
-                <img class="post__image" src="../static/img/post__img.png">
+                <img class="post__image" src="{% static "img/post__img.png" %}" alt="">
 
                 <p class="post__description">
                     Facilisis volutpat est velit egestas dui id ornare. Condimentum vitae sapien pellentesque
@@ -58,7 +59,7 @@
                     <button class="button button--normal" type="submit">SHARE<i
                             class="button__icon fas fa-share-alt"></i></button>
 
-                    <a href="../templates/blog.html">
+                    <a href="{% url 'blog' %}">
                         <button class="button button--full" type="submit">Go to blog</button>
                     </a>
                 </div>
@@ -71,49 +72,55 @@
         <h3>People</h3>
         <h4>in charge of this site</h4>
         <div class="container--people">
-            <div class="people__box people__box--1">
-                <div class="people__box--icons">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-github"></i>
-                    <i class="fab fa-linkedin-in"></i>
+            <a href="{% url 'tymek' %}">
+                <div class="people__box people__box--1">
+                    <div class="people__box--icons">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-github"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                    <div class="people__box--name">
+                        Tymoteusz Frankiewicz
+                    </div>
+                    <div class="people__box--function">
+                        Python devotee
+                    </div>
                 </div>
-                <div class="people__box--name">
-                    John Doe
-                </div>
-                <div class="people__box--function">
-                    CEO
-                </div>
-            </div>
+            </a>
 
-            <div class="people__box people__box--2">
-                <div class="people__box--icons">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-github"></i>
-                    <i class="fab fa-linkedin-in"></i>
+            <a href="{% url 'szymonw' %}">
+                <div class="people__box people__box--2">
+                    <div class="people__box--icons">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-github"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                    <div class="people__box--name">
+                        Szymon Wiśniewski
+                    </div>
+                    <div class="people__box--function">
+                        Frontend wizard
+                    </div>
                 </div>
-                <div class="people__box--name">
-                    Freddie Mercury
-                </div>
-                <div class="people__box--function">
-                    programmer
-                </div>
-            </div>
+            </a>
 
-            <div class="people__box people__box--3">
-                <div class="people__box--icons">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-github"></i>
-                    <i class="fab fa-linkedin-in"></i>
+            <a href="{% url 'szymonf' %}">
+                <div class="people__box people__box--3">
+                    <div class="people__box--icons">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-github"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                    <div class="people__box--name">
+                        Szymon Frankiewicz
+                    </div>
+                    <div class="people__box--function">
+                        DevOps guy
+                    </div>
                 </div>
-                <div class="people__box--name">
-                    Mary Jane
-                </div>
-                <div class="people__box--function">
-                    designer
-                </div>
-            </div>
+            </a>
         </div>
-        <img src="../static/img/vector--3.svg" class="vector vector--4">
+        <img src="{% static "img/vector--3.svg" %}" class="vector vector--4" alt="">
     </section>
     <!-- END OF PEOPLE -->
 
@@ -211,7 +218,7 @@
                 </div>
             </div>
         </div>
-        <img src="../static/img/vector--4.svg" class="vector vector--5">
+        <img src="{% static "img/vector--4.svg" %}" class="vector vector--5" alt="">
     </section>
     <!-- END OF PORTFOLIO -->
 
@@ -235,11 +242,11 @@
                 <div class="footer__menu--2">
                     <h6>Menu</h6>
                     <ul>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Authors</a></li>
-                        <li><a href="#">Offer</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="{% url 'blog' %}">Blog</a></li>
+                        <li><a href="{% url 'home-page' %}#projects">Projects</a></li>
+                        <li><a href="{% url 'home-page' %}#team">Authors</a></li>
+                        <li><a href="{% url 'home-page' %}#offer">Offer</a></li>
+                        <li><a href="{% url 'home-page' %}#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer__menu--3">
@@ -253,9 +260,9 @@
                 </div>
                 <div class="footer__menu--4">
                     <h6>Social Media</h6>
-                    <a href="#"><img src="../static/img/icon--fb.svg" alt=""></a>
-                    <a href="#"><img src="../static/img/icon--twitter.svg" alt=""></a>
-                    <a href="#"><img src="../static/img/icon--instagram.svg" alt=""></a>
+                    <a href="#"><img src="{% static "img/icon--fb.svg" %}" alt=""></a>
+                    <a href="#"><img src="{% static "img/icon--twitter.svg" %}" alt=""></a>
+                    <a href="#"><img src="{% static "img/icon--instagram.svg" %}" alt=""></a>
                 </div>
             </div>
         </div>

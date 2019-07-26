@@ -15,12 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, re_path, include
-from .views import home_page, author_page
+from .views import home_page, author_page_tymek, author_page_szymon_f, author_page_szymon_w
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home_page, name='home-page'),
-    path('author', author_page, name='author'),
+    path('tymoteusz-frankiewcz/', author_page_tymek, name='tymek'),
+    path('szymon-wisniewski/', author_page_szymon_w, name='szymonw'),
+    path('szymon-frankiewicz/', author_page_szymon_f, name='szymonf'),
     re_path(r'^tinymce/', include('tinymce.urls')),
 
     # all urls from blog app, which is plugable app module

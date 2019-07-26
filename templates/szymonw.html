@@ -7,7 +7,6 @@
 
 {% block body %}
     <input class="search" placeholder="What are you looking for? Type in and press enter.">
-    </input>
 
     <section class="author">
         <div class="container">
@@ -19,13 +18,9 @@
                         <i class="fab fa-github"></i>
                         <i class="fab fa-linkedin-in"></i>
                     </div>
-                    <h3>John Doe</h3>
+                    <h3>Szymon Wiśniewski</h3>
                     <h4>Designer / Programmer</h4>
                     <div class="author--skills">
-                        <i class="fab fa-python"></i>
-                        <i class="fab fa-js"></i>
-                        <i class="fab fa-css3-alt"></i>
-                        <i class="fab fa-html5"></i>
                         <i class="fab fa-angular"></i>
                     </div>
                 </div>
@@ -92,10 +87,9 @@
                 </div>
                 <div class="footer__menu--4">
                     <h6>Social Media</h6>
-                    <a href="#"><img src="../static/img/icon--fb.svg" alt=""></a>
-                    <a href="#"><img src="../static/img/icon--twitter.svg" alt="">
-                    </a>
-                    <a href="#"><img src="../static/img/icon--instagram.svg" alt=""></a>
+                    <a href="#"><img src="{% static "img/icon--fb.svg" %}" alt=""></a>
+                    <a href="#"><img src="{% static "img/icon--twitter.svg" %}" alt=""></a>
+                    <a href="#"><img src="{% static "img/icon--instagram.svg" %}" alt=""></a>
                 </div>
             </div>
         </div>
