@@ -36,8 +36,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
-    'tinymce',
+    'ckeditor',
+    'ckeditor_uploader',
 ]
+
+CKEDITOR_UPLOAD_PATH = 'uploads/'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -119,24 +122,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-
+# STATIC_ROOT = 'static/'
 # for templates not included in app
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
 
-TINYMCE_DEFAULT_CONFIG = {
-    'mode': 'exact',
-    'theme': 'advanced',
-    'relative_urls': False,
-    'width': 600,
-    'height': 300,
-    'plugins': 'table,advimage,advlink,inlinepopups,preview,media,searchreplace,contextmenu,paste,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras',
-    'theme_advanced_buttons1': 'fullscreen,|,bold,italic,underline,strikethrough,|,sub,sup,|,bullist,numlist,|,outdent,indent,|,formatselect,removeformat',
-    'theme_advanced_buttons2': 'cut,copy,paste,pastetext,pasteword,|,search,replace,|,undo,redo,|,link,unlink,anchor,image,media,charmap,|,visualchars,nonbreaking',
-    'theme_advanced_buttons3': 'visualaid,tablecontrols,|,blockquote,del,ins,|,preview,code',
-    'theme_advanced_toolbar_align': 'left',
-    'paste_text_sticky': True,
-    'paste_text_sticky_default': True,
-    'valid_styles': 'font-weight,font-style,text-decoration',
-}
+MEDIA_URL = '/media/'
+MEDIA_ROOT = 'media/'
