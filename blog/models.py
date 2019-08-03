@@ -21,3 +21,6 @@ class BlogPost(models.Model):
     # displays title instead of object in django admin
     def __str__(self):
         return self.title
+
+    def get_absolute_url(self):
+        return f"/blog/{self.slug}"

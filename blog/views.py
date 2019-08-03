@@ -1,3 +1,4 @@
+from django.core.paginator import Paginator
 from django.shortcuts import render, get_object_or_404
 from .models import BlogPost
 
@@ -7,9 +8,12 @@ from .models import BlogPost
 
 def blog_post_list_view(request):
     """List outs blog posts, may search them"""
-    qs = BlogPost.objects.all()
+    qs = BlogPost.objects.all().order_by('-date')
+    paginator = Paginator(qs, 2)
+    page = request.GET.get('page')
+    objects = paginator.get_page(page)
     template_name = 'blog/list.html'
-    context = {'object_list': qs}
+    context = {'object_list': objects}
     return render(request, template_name, context)
 
 
