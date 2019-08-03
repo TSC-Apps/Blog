@@ -22,6 +22,7 @@ from .views import home_page, author_page_tymek, author_page_szymon_f, author_pa
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('ckeditor', include('ckeditor_uploader.urls')),
     path('', home_page, name='home-page'),
     path('tymoteusz-frankiewcz/', author_page_tymek, name='tymek'),
     path('szymon-wisniewski/', author_page_szymon_w, name='szymonw'),
@@ -29,5 +30,4 @@ urlpatterns = [
     # all urls from blog app, which is plugable app module
     # first arguments sets it like this: blog/edit...
     path('blog/', include('blog.urls')),
-    path('ckeditor', include('ckeditor_uploader.urls')),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
