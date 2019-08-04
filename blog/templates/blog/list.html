@@ -59,24 +59,30 @@
 
             <div class="pagination">
 
+                <a href="?page=1">
+                    <button class="button button--category">&laquo;</button>
+                </a>
+
                 {% if object_list.has_previous %}
                     <a href="?page={{ object_list.previous_page_number }}">
-                        <button class="button button--category">&laquo;</button>
+                        <button class="button button--category">{{ object_list.previous_page_number }}</button>
                     </a>
                 {% endif %}
 
-                {% for object in object_list.paginator.page_range %}
-                    <a href="?page={{ forloop.counter }}">
-                        <button class="button button--category">{{ forloop.counter }}</button>
-                    </a>
-                {% endfor %}
+                <a href="?page={{ object_list.number }}">
+                    <button class="button button--category">{{ object_list.number }}</button>
+                </a>
 
                 {% if object_list.has_next %}
                     <a href="?page={{ object_list.next_page_number }}">
-                        <button class="button button--category">&raquo;</button>
+                        <button class="button button--category">{{ object_list.next_page_number }}</button>
                     </a>
-
                 {% endif %}
+
+                <a href="?page={{ object_list.paginator.num_pages }}">
+                    <button class="button button--category">&raquo;</button>
+                </a>
+
             </div>
         </div>
     </section>

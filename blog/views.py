@@ -9,7 +9,7 @@ from .models import BlogPost
 def blog_post_list_view(request):
     """List outs blog posts, may search them"""
     qs = BlogPost.objects.all().order_by('-date')
-    paginator = Paginator(qs, 5)
+    paginator = Paginator(qs, 1)
     page = request.GET.get('page')
     objects = paginator.get_page(page)
     template_name = 'blog/list.html'
