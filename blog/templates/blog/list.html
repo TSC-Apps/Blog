@@ -60,22 +60,22 @@
             <div class="pagination">
 
                 {% if object_list.has_previous %}
-                    <a href="?page=1">
-                        <button class="button button--category">first</button>
-                    </a>
                     <a href="?page={{ object_list.previous_page_number }}">
-                        <button class="button button--category">previous</button>
+                        <button class="button button--category">&laquo;</button>
                     </a>
                 {% endif %}
 
+                {% for object in object_list.paginator.page_range %}
+                    <a href="?page={{ forloop.counter }}">
+                        <button class="button button--category">{{ forloop.counter }}</button>
+                    </a>
+                {% endfor %}
 
                 {% if object_list.has_next %}
                     <a href="?page={{ object_list.next_page_number }}">
-                        <button class="button button--category">next</button>
+                        <button class="button button--category">&raquo;</button>
                     </a>
-                    <a href="?page={{ object_list.paginator.num_pages }}">
-                        <button class="button button--category">last</button>
-                    </a>
+
                 {% endif %}
             </div>
         </div>
