@@ -32,30 +32,26 @@
                 <div class="post__user">
                     <img src="{% static "img/avatar.png" %}" class="post__user--avatar" alt="">
                     <span class="post__user--name">
-                        Szymon Wiśniewski
+                        {{ object.user }}
                     </span>
                     <span class="post__user--date">
-                        10 march 2019
+                        {{ object.date }}
                     </span>
                 </div>
 
                 <div class="post__tag">
-                    PROGRAMMING
+                    {{ object.article_type }}
                 </div>
 
-                <a href="#"><h5 class="post__title">Ad minim veniam, quis nostrud exercitation ullamco laboris.</h5></a>
+                <a href="{{object.get_absolute_url}}"><h5 class="post__title">{{ object.title }}</h5></a>
 
-                <img class="post__image" src="{% static "img/post__img.png" %}" alt="">
-
-                <p class="post__description">
-                    Facilisis volutpat est velit egestas dui id ornare. Condimentum vitae sapien pellentesque
-                    habitant morbi tristique senectus et netus. Rhoncus aenean vel elit scelerisque mauris
-                    pellentesque pulvinar. Faucibus turpis in eu...
-                </p>
+                <p class="post__description">{{ object.description | safe }} </p>
 
                 <div class="post__buttons">
-                    <button class="button button--submit" type="submit">READ MORE<i
-                            class="button__icon fas fa-arrow-right"></i></button>
+                    <a href="{{ object.get_absolute_url }}">
+                        <button class="button button--submit" type="submit">READ MORE<i
+                                class="button__icon fas fa-arrow-right"></i></button>
+                    </a>
                     <button class="button button--normal" type="submit">SHARE<i
                             class="button__icon fas fa-share-alt"></i></button>
 

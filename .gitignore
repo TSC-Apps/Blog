@@ -2,3 +2,7 @@ venv/
 .idea/
 __pycache__/
 secret.py
+static/admin
+static/blog
+static/ckeditor
+media/

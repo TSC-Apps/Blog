@@ -1,9 +1,11 @@
-from django.http import HttpResponse
 from django.shortcuts import render
+from blog.models import BlogPost
 
 
 def home_page(request):
-    return render(request, 'home.html')
+    qs = BlogPost.objects.last()
+    context = {'object': qs}
+    return render(request, 'home.html', context)
 
 
 def author_page_tymek(request):
