@@ -35,7 +35,7 @@
                         {{ object.user }}
                     </span>
                     <span class="post__user--date">
-                        {{ object.date }}
+                        {{ object.date | date:"d F Y"}}
                     </span>
                 </div>
 
@@ -43,9 +43,11 @@
                     {{ object.article_type }}
                 </div>
 
-                <a href="{{object.get_absolute_url}}"><h5 class="post__title">{{ object.title }}</h5></a>
+                <a href="{{ object.get_absolute_url }}"><h5 class="post__title">{{ object.title }}</h5></a>
 
-                <p class="post__description">{{ object.description | safe }} </p>
+                <p class="post__description">
+                    {{ object.content | truncatewords:60| safe }}
+                </p>
 
                 <div class="post__buttons">
                     <a href="{{ object.get_absolute_url }}">

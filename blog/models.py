@@ -11,7 +11,6 @@ class BlogPost(models.Model):
     title = models.TextField()
     date = models.DateTimeField(blank=True, null=True)
     slug = models.SlugField(unique=True)
-    description = RichTextUploadingField()
     article_types = [('Programming', 'Programming'), ('UX/UI', 'UX/UI'), ('Electronics', 'Electronics'),
                      ('Other', 'Other')]
     article_type = models.CharField(max_length=20, choices=article_types, default='Programming')

@@ -22,7 +22,7 @@
                         {{ post.user }}
                     </span>
                         <span class="post__user--date">
-                        {{ post.date }}
+                        {{ post.date | date:"d F Y" }}
                     </span>
                     </div>
 
@@ -35,7 +35,7 @@
                     </a>
 
                     <p class="post__description">
-                        {{ post.description | safe }}
+                        {{ post.content | truncatewords:60| safe }}
                     </p>
 
                     <div class="post__buttons">
