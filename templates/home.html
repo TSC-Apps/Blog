@@ -32,7 +32,8 @@
                 <div class="post__user">
                     <img src="{% static "img/avatar.png" %}" class="post__user--avatar" alt="">
                     <span class="post__user--name">
-                        {{ object.user }}
+                        {{ object.user.first_name }}
+                        {{ object.user.last_name }}
                     </span>
                     <span class="post__user--date">
                         {{ object.date | date:"d F Y"}}
