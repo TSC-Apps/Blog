@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'ckeditor_uploader',
 ]
 
+AUTH_USER_MODEL = 'blog.User'
+
 CKEDITOR_UPLOAD_PATH = 'uploads/'
 
 MIDDLEWARE = [
