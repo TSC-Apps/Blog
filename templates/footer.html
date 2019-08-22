@@ -1,0 +1,38 @@
+<section class="footer">
+    <div class="container">
+        <div class="footer__menu">
+            <div class="footer__menu--1">
+                <h6>Sample</h6>
+                <a href="mailto: mail@gmail.com">mail@gmail.com</a>
+            </div>
+            <div class="footer__menu--2">
+                <h6>Menu</h6>
+                <ul>
+                    <li><a href="{% url 'blog' %}">Blog</a></li>
+                    <li><a href="{% url 'home-page' %}#projects">Projects</a></li>
+                    <li><a href="{% url 'home-page' %}#team">Authors</a></li>
+                    <li><a href="{% url 'home-page' %}#offer">Offer</a></li>
+                    <li><a href="{% url 'home-page' %}#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer__menu--3">
+                <h6>Latest Posts</h6>
+                <ul>
+                    <li><a href="#">Ad minim veniam, quis nostrud
+                        exercitation ullamco laboris.</a></li>
+                    <li><a href="#">Duis aute irure dolor in reprehenderit.</a></li>
+                    <li><a href="#">In voluptate velit esse.</a></li>
+                </ul>
+            </div>
+            <div class="footer__menu--4">
+                <h6>Social Media</h6>
+                {% load static %}
+                <a href="#"><img src="{% static "img/icon--fb.svg" %}" alt=""></a>
+                <a href="#"><img src="{% static "img/icon--twitter.svg" %}" alt=""></a>
+                <a href="#"><img src="{% static "img/icon--instagram.svg" %}" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <!-- <img src="../static/img/vector--5.svg" class="vector vector--6"> -->
+</section>
+<!-- END OF FOOTER -->
