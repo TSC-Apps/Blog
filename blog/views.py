@@ -21,5 +21,5 @@ def blog_post_detail_view(request, slug):
     """ Gets blog post object with given slug and displays it, or gives 404"""
     obj = get_object_or_404(BlogPost, slug=slug)
     template_name = 'blog/detail.html'
-    context = {"object": obj}
+    context = {'post': obj}
     return render(request, template_name, context)

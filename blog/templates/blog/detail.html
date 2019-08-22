@@ -13,26 +13,26 @@
 
             <div class="post">
                 <div class="post__user">
-                    <img src="../../../static/img/avatar.png" class="post__user--avatar">
-                    <span class="post__user--name">
-                        {{ object.user.first_name }}
-                        {{ object.user.last_name }}
-                    </span>
+                    <img src="{{ post.user.avatar.url}}" class="post__user--avatar">
+                    <a href="/{{ username }}"><span class="post__user--name">
+                        {{ post.user.first_name }}
+                        {{ post.user.last_name }}
+                        </span></a>
                     <span class="post__user--date">
-                        {{ object.date | date:"d F Y" }}
+                        {{ post.date | date:"d F Y" }}
                     </span>
                 </div>
 
                 <div class="post__tag">
-                    {{ object.article_type }}
+                    {{ post.article_type }}
                 </div>
 
                 <a href="#">
-                    <h5 class="post__title">{{ object.title }}</h5>
+                    <h5 class="post__title">{{ post.title }}</h5>
                 </a>
 
                 <p>
-                    {{ object.content | safe }}
+                    {{ post.content | safe }}
                 </p>
 
                 <div class="post__buttons">

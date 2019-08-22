@@ -15,7 +15,7 @@
             </div>
 
             {% for post in object_list %}
-                {% include "blog/thumbnail.html" with first_name=post.user.first_name last_name=post.user.last_name date=post.date article_type=post.article_type absulute_url=post.get_absolute_url title=post.title content=post.content %}
+                {% include "blog/thumbnail.html" with username=post.user.username first_name=post.user.first_name last_name=post.user.last_name avatar=post.user.avatar date=post.date article_type=post.article_type absolute_url=post.get_absolute_url title=post.title content=post.content %}
                 <hr>
             {% endfor %}
 
