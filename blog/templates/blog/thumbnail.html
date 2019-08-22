@@ -1,0 +1,33 @@
+<div class="post">
+    <div class="post__user">
+        <img src="../static/img/avatar.png" class="post__user--avatar">
+        <span class="post__user--name">
+                        {{ first_name }}
+                        {{ last_name }}
+                    </span>
+        <span class="post__user--date">
+                        {{date | date:"d F Y" }}
+                    </span>
+    </div>
+
+    <div class="post__tag">
+        {{ article_type | safe }}
+    </div>
+
+    <a href='{{ absolute_url }}'>
+        <h5 class="post__title">{{ title | safe }}</h5>
+    </a>
+
+    <p class="post__description">
+        {{ content | truncatewords:60| safe }}
+    </p>
+
+    <div class="post__buttons">
+        <a href='{{ absolute_url }}'>
+            <button class="button button--submit" type="submit">READ MORE<i
+                    class="button__icon fas fa-arrow-right"></i></button>
+        </a>
+        <button class="button button--normal" type="submit">SHARE<i
+                class="button__icon fas fa-share-alt"></i></button>
+    </div>
+</div>

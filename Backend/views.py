@@ -4,7 +4,7 @@ from blog.models import BlogPost
 
 def home_page(request):
     qs = BlogPost.objects.last()
-    context = {'object': qs}
+    context = {'post': qs}
     return render(request, 'home.html', context)
 
 

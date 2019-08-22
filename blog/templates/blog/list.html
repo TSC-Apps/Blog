@@ -15,39 +15,7 @@
             </div>
 
             {% for post in object_list %}
-                <div class="post">
-                    <div class="post__user">
-                        <img src="../static/img/avatar.png" class="post__user--avatar">
-                        <span class="post__user--name">
-                        {{ post.user.first_name }}
-                        {{ post.user.last_name }}
-                    </span>
-                        <span class="post__user--date">
-                        {{ post.date | date:"d F Y" }}
-                    </span>
-                    </div>
-
-                    <div class="post__tag">
-                        {{ post.article_type | safe }}
-                    </div>
-
-                    <a href='{{ post.get_absolute_url }}'>
-                        <h5 class="post__title">{{ post.title | safe }}</h5>
-                    </a>
-
-                    <p class="post__description">
-                        {{ post.content | truncatewords:60| safe }}
-                    </p>
-
-                    <div class="post__buttons">
-                        <a href='{{ post.get_absolute_url }}'>
-                            <button class="button button--submit" type="submit">READ MORE<i
-                                    class="button__icon fas fa-arrow-right"></i></button>
-                        </a>
-                        <button class="button button--normal" type="submit">SHARE<i
-                                class="button__icon fas fa-share-alt"></i></button>
-                    </div>
-                </div>
+                {% include "blog/thumbnail.html" with first_name=post.user.first_name last_name=post.user.last_name date=post.date article_type=post.article_type absulute_url=post.get_absolute_url title=post.title content=post.content %}
                 <hr>
             {% endfor %}
 
@@ -82,5 +50,5 @@
         </div>
     </section>
     <!-- END OF BLOG -->
-    {% include "blog/blog_footer.html" %}
+    {% include "blog/footer.html" %}
 {% endblock %}
