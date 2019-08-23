@@ -13,7 +13,7 @@
 
             <div class="post">
                 <div class="post__user">
-                    <img src="{{ post.user.avatar.url}}" class="post__user--avatar">
+                    <img src="{{ post.user.avatar.url }}" class="post__user--avatar">
                     <a href="/{{ username }}"><span class="post__user--name">
                         {{ post.user.first_name }}
                         {{ post.user.last_name }}
@@ -27,9 +27,7 @@
                     {{ post.article_type }}
                 </div>
 
-                <a href="#">
-                    <h5 class="post__title">{{ post.title }}</h5>
-                </a>
+                <h5 class="post__title">{{ post.title }}</h5>
 
                 <p>
                     {{ post.content | safe }}

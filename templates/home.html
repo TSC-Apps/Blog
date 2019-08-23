@@ -28,7 +28,7 @@
         <div class="container--post">
             <h3>Blog</h3>
             <h4>latest entry</h4>
-                {% include "blog/thumbnail.html" with first_name=post.user.first_name last_name=post.user.last_name avatar=post.avatar date=post.date article_type=post.article_type absulute_url=post.get_absolute_url title=post.title content=post.content %}
+                {% include "blog/thumbnail.html" with username=post.user.username first_name=post.user.first_name last_name=post.user.last_name avatar=post.user.avatar date=post.date article_type=post.article_type absolute_url=post.get_absolute_url title=post.title content=post.content %}
         </div>
     </section>
     <!-- END OF BLOG -->
@@ -196,5 +196,5 @@
         </div>
     </section>
     <!-- END OF PORTFOLIO -->
-    {% include "footer.html" %}
+    {% include "footer.html"%}
 {% endblock %}

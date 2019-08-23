@@ -18,10 +18,9 @@
             <div class="footer__menu--3">
                 <h6>Latest Posts</h6>
                 <ul>
-                    <li><a href="#">Ad minim veniam, quis nostrud
-                        exercitation ullamco laboris.</a></li>
-                    <li><a href="#">Duis aute irure dolor in reprehenderit.</a></li>
-                    <li><a href="#">In voluptate velit esse.</a></li>
+                    {% for post in last_three_posts %}
+                        <li><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></li>
+                    {% endfor %}
                 </ul>
             </div>
             <div class="footer__menu--4">
@@ -33,6 +32,5 @@
             </div>
         </div>
     </div>
-    <!-- <img src="../static/img/vector--5.svg" class="vector vector--6"> -->
 </section>
 <!-- END OF FOOTER -->

@@ -13,7 +13,9 @@ def blog_post_list_view(request):
     page = request.GET.get('page')
     objects = paginator.get_page(page)
     template_name = 'blog/list.html'
-    context = {'object_list': objects}
+
+    last_three_posts = BlogPost.objects.all().order_by('-id')[:3]
+    context = {'object_list': objects, 'last_three_posts': last_three_posts}
     return render(request, template_name, context)
 
 

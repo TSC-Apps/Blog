@@ -31,29 +31,29 @@
             <div class="author--flex">
                 <div class="author__box">
                     <h5>About</h5>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. </p>
-                    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>
+                        I am programming since 2014, and since then I tried writing mobile apps, static websites and
+                        terrible C++ and Java code for desktop applications.
+                    </p>
+                    <p>
+                        Currently enrolled in Computer Science. I dabble in any kind of development in Python.
+                        I'm passionate Linux user, and I'm still discovering it's awesomeness.
+                    </p>
+                    <p>
+                        Since July 2019 I'm writing buggy software for Nokia
+                    </p>
                 </div>
                 <div class="author__box">
                     <h5>Experience</h5>
                     <ul>
-                        <li><span>2017 - today</span><br>Porn Guru</li>
-                        <li><span>2014 - 2017</span><br>Porn Director</li>
-                        <li><span>2010 - 2014</span><br>Porn Freelancer</li>
-                        <li><span>1995 - 2010</span><br>Assembly Developer</li>
+                        <li><span>2019.07 - today</span><br>Nokia Python Trainee</li>
                     </ul>
                 </div>
                 <div class="author__box">
                     <h5>Latest Posts</h5>
-                    <ul>
-                        <li><a href="">Consectetur adipiscing elit</a></li>
-                        <li><a href="">Labore et dolore magna aliqua</a></li>
-                        <li><a href="">sed do eiusmod tempor</a></li>
-                        <li><a href="">Ut enim ad minim veniam</a></li>
-                        <li><a href="">Ullamco laboris nisi ut aliquip ex ea commodo consequat</a></li>
-                    </ul>
+                    {% for post in last_three_posts %}
+                        <li><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></li>
+                    {% endfor %}
                 </div>
             </div>
         </div>

@@ -9,20 +9,19 @@
             <div class="footer__menu--2">
                 <h6>Menu</h6>
                 <ul>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Authors</a></li>
-                    <li><a href="#">Offer</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="{% url 'blog' %}">Blog</a></li>
+                    <li><a href="{% url 'blog' %}">Projects</a></li>
+                    <li><a href="{% url 'blog' %}">Team</a></li>
+                    <li><a href="{% url 'blog' %}">Offer</a></li>
+                    <li><a href="{% url 'blog' %}">Contact</a></li>
                 </ul>
             </div>
             <div class="footer__menu--3">
                 <h6>Latest Posts</h6>
                 <ul>
-                    <li><a href="#">Ad minim veniam, quis nostrud
-                        exercitation ullamco laboris.</a></li>
-                    <li><a href="#">Duis aute irure dolor in reprehenderit.</a></li>
-                    <li><a href="#">In voluptate velit esse.</a></li>
+                    {% for post in last_three_posts %}
+                        <li><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></li>
+                    {% endfor %}
                 </ul>
             </div>
             <div class="footer__menu--4">
