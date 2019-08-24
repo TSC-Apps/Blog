@@ -37,7 +37,7 @@ class User(AbstractBaseUser):
     avatar = models.ImageField(upload_to='profile_photos')
 
     USERNAME_FIELD = 'username'
-    REQUIRED_FIELDS = ['first_name', 'last_name', 'avatar']
+    REQUIRED_FIELDS = ['first_name', 'last_name']
 
     objects = UserManager()
 
