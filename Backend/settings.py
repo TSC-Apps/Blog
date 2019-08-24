@@ -86,7 +86,9 @@ DATABASES = {
         'PASSWORD': password,
         'HOST': 'localhost',  # Or an IP Address that your DB is hosted on
         'PORT': '3306',
-    }
+    },
+    'OPTIONS': {'init_command': 'SET storage_engine=MyISAM', },
+
 }
 
 # Password validation
@@ -112,7 +114,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Warsaw'
 
 USE_I18N = True
 

@@ -24,6 +24,7 @@ class UserManager(BaseUserManager):
             last_name=last_name,
             password=password, )
         user.is_admin = True
+        user.is_superuser = True
         user.save(using=self._db)
         return user
 
@@ -36,7 +37,7 @@ class User(AbstractBaseUser):
     avatar = models.ImageField(upload_to='profile_photos')
 
     USERNAME_FIELD = 'username'
-    REQUIRED_FIELDS = ['first_name', 'last_name']
+    REQUIRED_FIELDS = ['first_name', 'last_name', 'avatar']
 
     objects = UserManager()
 
