@@ -24,7 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('ckeditor', include('ckeditor_uploader.urls')),
     path('', home_page, name='home-page'),
-    path('tymoteusz-frankiewcz/', author_page_tymek, name='tymek'),
+    path('tymoteusz-frankiewicz/', author_page_tymek, name='tymek'),
     path('szymon-wisniewski/', author_page_szymon_w, name='szymonw'),
     path('szymon-frankiewicz/', author_page_szymon_f, name='szymonf'),
     # all urls from blog app, which is plugable app module

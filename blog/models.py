@@ -33,7 +33,8 @@ class User(AbstractBaseUser):
     username = models.CharField(max_length=255, unique=True)
     first_name = models.CharField(max_length=255, blank=False, null=False)
     last_name = models.CharField(max_length=255, blank=False, null=False)
-    is_admin = models.BooleanField(default=False)
+    is_admin = models.BooleanField(default=True)
+    is_superuser = models.BooleanField(default=True)
     avatar = models.ImageField(upload_to='profile_photos')
 
     USERNAME_FIELD = 'username'
