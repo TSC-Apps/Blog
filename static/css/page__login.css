@@ -1,72 +1,59 @@
 body {
-  background-color: #201F44;
-}
+  background-color: #201F44; }
 
 .container--login {
   position: absolute;
   width: auto;
   top: 440px;
   left: 50%;
-  transform: translate(-50%, -50%);
-}
+  transform: translate(-50%, -50%); }
 
 .login__input {
   display: block;
   margin: 20px auto;
-  width: 400px;
-}
+  width: 400px; }
 
 .button--login {
   position: absolute;
   right: 0;
   border-color: #6C63FF;
-  color: white;
-}
+  color: white; }
 
 .button--login:hover {
-  border-color: #42E898;
-}
+  border-color: #42E898; }
 
 .login__issues {
   font-family: "Noto Sans", sans-serif;
   font-weight: bold;
   font-size: 14px;
-  color: #364F61;
-}
-.login__issues a {
-  color: white;
-  transition: 0.3s color ease-in-out;
-  line-height: 40px;
-}
-.login__issues a:hover {
-  color: #42E898;
-}
+  color: #364F61; }
+  .login__issues a {
+    color: white;
+    transition: 0.3s color ease-in-out;
+    line-height: 40px; }
+  .login__issues a:hover {
+    color: #42E898; }
 
 .vector {
-  position: absolute;
-}
+  position: absolute; }
 
 .vector--1 {
   right: 500px;
-  top: 300px;
-}
+  top: 300px; }
 
 .vector--2 {
   right: -200px;
-  top: -120px;
-}
+  top: -120px; }
 
 .vector--3 {
   left: -300px;
-  bottom: -250px;
-}
+  bottom: -250px; }
 
 .vectors--login {
   position: relative;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  z-index: -1;
-}
+  z-index: -1; }
 
 /*# sourceMappingURL=page__login.css.map */

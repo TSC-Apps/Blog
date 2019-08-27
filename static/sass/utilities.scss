@@ -10,7 +10,7 @@
     background-color: transparent;
     border-radius: 4px;
     cursor: pointer;
-    transition: 0.3s all ease-in-out;
+    transition: 0.3s background-color ease-in-out;
 }
 
 .button--submit {
@@ -64,6 +64,10 @@
     color: $basic;
 }
 
+#button--search {
+    cursor: pointer;
+}
+
 .button--send {
     border-color: $blue--light;
     background: $blue--light;
@@ -89,4 +93,8 @@
 
 .button--full:hover {
     background: $green;
+}
+
+.invisible {
+    display: none;
 }

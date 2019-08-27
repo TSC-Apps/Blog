@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather|Noto+Sans");
 .button {
-  font-family: "Noto Sans", sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   font-weight: bold;
   font-size: 14px;
   border: 2px solid transparent;
@@ -8,73 +8,63 @@
   background-color: transparent;
   border-radius: 4px;
   cursor: pointer;
-  transition: 0.3s all ease-in-out;
-}
+  transition: 0.3s background-color ease-in-out; }
 
 .button--submit {
   border-color: #42E898;
-  color: #364F61;
-}
+  color: #364F61; }
 
 .button--submit:hover {
-  background-color: #42E898;
-}
+  background-color: #42E898; }
 
 .button__icon {
-  margin-left: 20px;
-}
+  margin-left: 20px; }
 
 .button--normal {
   border-color: #201F44;
-  color: #201F44;
-}
+  color: #201F44; }
 
 .button--normal:hover {
   background: #201F44;
-  color: white;
-}
+  color: white; }
 
 .button--active {
   background: #6C63FF;
   border-color: #6C63FF;
-  color: white;
-}
+  color: white; }
 
 .button--category {
   border-color: #364F61;
-  color: #364F61;
-}
+  color: #364F61; }
 
 .button--category:hover {
   background: #6C63FF;
   border-color: #6C63FF;
-  color: white;
-}
+  color: white; }
 
 .button--blue {
   border-color: #6C63FF;
   background: #403E83;
-  color: white;
-}
+  color: white; }
 
 .button--blue:hover {
   background: #6C63FF;
-  color: white;
-}
+  color: white; }
+
+#button--search {
+  cursor: pointer; }
 
 .button--send {
   border-color: #6C63FF;
   background: #6C63FF;
   color: white;
   font-size: 1.35em;
-  padding: 10px 25px;
-}
+  padding: 10px 25px; }
 
 .button--send:hover {
   background: #42E898;
   border-color: #42E898;
-  color: white;
-}
+  color: white; }
 
 .button--full {
   display: block;
@@ -82,11 +72,12 @@
   background: #6C63FF;
   font-size: 1.2em;
   font-weight: bold;
-  color: white;
-}
+  color: white; }
 
 .button--full:hover {
-  background: #42E898;
-}
+  background: #42E898; }
+
+.invisible {
+  display: none; }
 
 /*# sourceMappingURL=utilities.css.map */

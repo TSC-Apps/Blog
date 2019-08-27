@@ -5,11 +5,10 @@
         <div class="container">
             <div class="header__text">
                 <h1>Nice to meet you.</h1>
-                <h2>This is a place where you can broaden your horizons at programming, UX/UI design and electronics.
+                <h2 data-aos="fade-in">This is a place where you can broaden your horizons at programming, UX/UI design and electronics.
                 </h2>
-                <button class="button button--submit button--header" type="submit">GET TO KNOW US<i
+                <button class="button button--submit button--header" type="submit" data-aos="fade-up">GET TO KNOW US<i
                         class="button__icon fas fa-arrow-right"></i></button>
-            </div>
         </div>
 
         <div class="vectors--header">
@@ -20,25 +19,25 @@
             <img class="vector vector--3" src="{% static "img/vector-1.svg" %}" alt="">
         </div>
 
-        <div class="scrolldown"></div>
+        <div data-aos="fade-up" class="scrolldown"></div>
     </header>
     <!-- END OF HEADER -->
 
     <section class="blog">
         <div class="container--post">
-            <h3>Blog</h3>
-            <h4>latest entry</h4>
+            <h3 data-aos="fade-in">Blog</h3>
+            <h4 data-aos="fade-up" data-aos-delay="100">latest entry</h4>
                 {% include "blog/thumbnail.html" with username=post.user.username first_name=post.user.first_name last_name=post.user.last_name avatar=post.user.avatar date=post.date article_type=post.article_type absolute_url=post.get_absolute_url title=post.title content=post.content %}
         </div>
     </section>
     <!-- END OF BLOG -->
 
     <section class="people" id="team">
-        <h3>People</h3>
-        <h4>in charge of this site</h4>
+        <h3 data-aos="fade-in">People</h3>
+        <h4 data-aos="fade-up" data-aos-delay="100">in charge of this site</h4>
         <div class="container--people">
             <a href="{% url 'tymek' %}">
-                <div class="people__box people__box--1">
+                <div data-aos="fade-right" data-aos-delay="100" class="people__box people__box--1">
                     <div class="people__box--icons">
                         <i class="fab fa-facebook-f"></i>
                         <i class="fab fa-github"></i>
@@ -54,7 +53,7 @@
             </a>
 
             <a href="{% url 'szymonw' %}">
-                <div class="people__box people__box--2">
+                <div data-aos="fade-down" class="people__box people__box--2">
                     <div class="people__box--icons">
                         <i class="fab fa-facebook-f"></i>
                         <i class="fab fa-github"></i>
@@ -70,7 +69,7 @@
             </a>
 
             <a href="{% url 'szymonf' %}">
-                <div class="people__box people__box--3">
+                <div data-aos="fade-up" data-aos-delay="200" class="people__box people__box--3">
                     <div class="people__box--icons">
                         <i class="fab fa-facebook-f"></i>
                         <i class="fab fa-github"></i>
@@ -91,11 +90,11 @@
 
     <section class="offer" id="offer">
         <div class="container--offer">
-            <h3>Offer</h3>
-            <h4>we are confident in</h4>
+            <h3 data-aos="fade-in">Offer</h3>
+            <h4 data-aos="fade-up" data-aos-delay="100">we are confident in</h4>
 
             <div class="offer__boxes">
-                <div class="offer__box">
+                <div data-aos="fade-right" data-aos-delay="100" class="offer__box">
                     <span class="offer__box--title">
                         We are blogging.
                     </span>
@@ -108,7 +107,7 @@
                     <button class="button button--blue" type="submit">READ MORE<i
                             class="button__icon fas fa-arrow-right"></i></button>
                 </div>
-                <div class="offer__box">
+                <div data-aos="fade-down" class="offer__box">
                     <span class="offer__box--title">
                         Available for hire.
                     </span>
@@ -121,7 +120,7 @@
                     <button class="button button--blue" type="submit">READ MORE<i
                             class="button__icon fas fa-arrow-right"></i></button>
                 </div>
-                <div class="offer__box">
+                <div data-aos="fade-up" data-aos-delay="200" class="offer__box">
                     <span class="offer__box--title">
                         We are programming.
                     </span>
@@ -142,11 +141,11 @@
 
     <section class="portfolio" id="projects">
         <div class="container--portfolio">
-            <h3>Portfolio</h3>
-            <h4>projects we are proud of</h4>
+            <h3 data-aos="fade-in">Portfolio</h3>
+            <h4 data-aos="fade-up" data-aos-delay="100">projects we are proud of</h4>
 
             <div class="portfolio__boxes">
-                <div class="portfolio__box portfolio__box--1">
+                <div data-aos="fade-right" class="portfolio__box portfolio__box--1">
                     <div class="portfolio__box--name">
                         FB Redesign
                     </div>
@@ -155,7 +154,7 @@
                     </div>
                 </div>
 
-                <div class="portfolio__box portfolio__box--2">
+                <div data-aos="fade-down" data-aos-delay="100" class="portfolio__box portfolio__box--2">
                     <div class="portfolio__box--name">
                         Kancelaria Chmielewscy
                     </div>
@@ -164,7 +163,7 @@
                     </div>
                 </div>
 
-                <div class="portfolio__box portfolio__box--3">
+                <div data-aos="fade-right" data-aos-delay="100" class="portfolio__box portfolio__box--3">
                     <div class="portfolio__box--name">
                         homeBrain
                     </div>
@@ -173,7 +172,7 @@
                     </div>
                 </div>
 
-                <div class="portfolio__box portfolio__box--4">
+                <div data-aos="fade-up" class="portfolio__box portfolio__box--4">
                     <div class="portfolio__box--name">
                         SeedMed
                     </div>
@@ -189,10 +188,10 @@
 
     <section class="contact" id="contact">
         <div class="container--post">
-            <h3>Any questions? Simply ask us,
+            <h3 data-aos="fade-in">Any questions? Simply ask us,
                 we will answer as soon as possible.</h3>
 
-            <button class="button button--send">Send Mail</button>
+            <button data-aos="fade-in" data-aos-delay="100" class="button button--send">Send Mail</button>
         </div>
     </section>
     <!-- END OF PORTFOLIO -->
