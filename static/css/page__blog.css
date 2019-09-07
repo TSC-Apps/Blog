@@ -11,8 +11,6 @@ BLOG
   margin-top: 100px;
   position: relative;
   max-width: 100%; }
-  .post p {
-    font-weight: lighter; }
   .post h5:hover {
     color: #6C63FF;
     text-decoration: underline; }
@@ -49,9 +47,6 @@ BLOG
   border-radius: 4px; }
 
 .post__image {
-  -webkit-box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.15);
-  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.15);
   margin-top: -20px;
   margin-bottom: 30px;
   max-width: 100%;

@@ -6,8 +6,6 @@
 {% endblock %}
 
 {% block body %}
-    <input class="search" placeholder="What are you looking for? Type in and press enter.">
-
     <section class="blog">
         <div class="container--post">
 
@@ -29,9 +27,7 @@
 
                 <h5 class="post__title">{{ post.title }}</h5>
 
-                <p>
-                    {{ post.content | safe }}
-                </p>
+                {{ post.content | safe }}
 
                 <div class="post__buttons">
                     <button class="button button--normal" type="submit">SHARE<i

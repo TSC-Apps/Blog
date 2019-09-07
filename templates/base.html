@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="{% static 'css/page__index.css' %}" />
     <link rel="stylesheet" href="{% static 'css/page__blog.css' %}" />
     <link rel="stylesheet" href="{% static 'css/media.css' %}" />
-    <script src="{% static 'js/search.js' %}"></script>   
     {% block page_imports %} {% endblock %}
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
@@ -38,10 +37,39 @@
           <li>CONTACT</li>
         </a>
       </ul>
-      <i id="button--search" class="icon icon--search fas fa-search"></i>
+
+      <div id="button--search">
+        <i class="icon icon--search fas fa-search"></i>
+      </div>
+
+      <div class="nav__hamburger">
+        <div class="hamburger">
+          <div class="hamburger__bar--1"></div>
+          <div class="hamburger__bar--2"></div>
+          <div class="hamburger__bar--3"></div>
+        </div>
+
+        <ul class="hamburger__menu">
+          <li>
+            <a class="hamburger__entry" href="{% url 'blog' %}">BLOG</a>
+          </li>
+          <li>
+            <a class="hamburger__entry" href="{% url 'home-page' %}#projects">PROJECTS</a>
+          </li>
+          <li>
+            <a class="hamburger__entry" href="{% url 'home-page' %}#team">TEAM</a>
+          </li>
+          <li>
+            <a class="hamburger__entry" href="{% url 'home-page' %}#offer">OFFER</a>
+          </li>
+          <li>
+            <a class="hamburger__entry" href="{% url 'home-page' %}#contact">CONTACT</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
-    <input class="search invisible" placeholder="What are you looking for? Type in and press enter."></input>
+    <input class="search invisible" placeholder="searching for..."></input>
 
     {% block body %} {% endblock %}
 
@@ -56,6 +84,32 @@
     </script>
     <script>
         AOS.init();
+    </script>
+    <script>
+      const searchButton = document.querySelector('#button--search');
+      const searchBar = document.querySelector('.search');
+
+      searchButton.addEventListener('click', () => {
+        searchBar.classList.toggle('invisible');
+        console.log('test');
+      });
+    </script>
+    <script>
+      const hamburgerIcon = document.querySelector('.hamburger');
+      const hamburgerMenu = document.querySelector('.hamburger__menu');
+      const hamburgerEntries = document.querySelectorAll('.hamburger__entry');
+
+      for(let i = 0; i < hamburgerEntries.length; i++) {
+          let item = hamburgerEntries[i];
+          item.addEventListener('click', toggleHamburger);
+      }
+
+      hamburgerIcon.addEventListener('click', toggleHamburger);
+
+      function toggleHamburger() {
+          hamburgerIcon.classList.toggle("clicked");
+          hamburgerMenu.classList.toggle("show");
+      }
     </script>
   </body>
 </html>

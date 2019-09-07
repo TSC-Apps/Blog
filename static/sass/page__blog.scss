@@ -19,10 +19,6 @@ BLOG
     position: relative;
     max-width: 100%;
 
-    p {
-        font-weight: lighter;
-    }
-
     h5:hover {
         color: $blue--light;
         text-decoration: underline;
@@ -65,9 +61,6 @@ BLOG
 }
 
 .post__image {
-    -webkit-box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.15);
     margin-top: -20px;
     margin-bottom: 30px;
     max-width: 100%;

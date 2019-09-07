@@ -14,6 +14,10 @@
 @media (max-width: 768px) {
   .topbar .navigation--main {
     display: none; }
+  .topbar .nav__hamburger {
+    display: block; }
+  .topbar .icon--search {
+    right: 65px; }
 
   .container,
   .container--post,
