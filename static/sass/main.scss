@@ -209,6 +209,82 @@ TOPBAR
     outline: none;
 }
 
+.nav__hamburger {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.hamburger__menu {
+    background-color: $blue--darkest;
+    text-align: center;
+    margin: auto;
+    position: fixed;
+    top: 0; left: 0; bottom: 0; right: 0;
+    z-index: 9998;
+    display: none;
+    padding-left: 0;
+
+    li:first-of-type{
+        margin-top: 18vh;
+    }
+
+    li {
+        display: block;
+        list-style: none;
+
+        a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        a:hover {
+            border-bottom: 2px solid $blue--light;
+        }
+    }
+}
+
+.show {
+    display: block;
+}
+
+.hamburger {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    z-index: 9999;
+    margin-right: 15px;
+    margin-top: 19px;
+    display: inline-block;
+    cursor: pointer;
+
+    .hamburger__bar--1, .hamburger__bar--2, .hamburger__bar--3 {
+        height: 3px;
+        width: 70%;
+        margin: 5px;
+        background-color: white;
+        border-radius: 4px;
+        transition: 0.3s;
+    }
+}
+
+.clicked .hamburger__bar--1 {
+    -webkit-transform: rotate(-45deg) translate(-4px, 5px);
+    transform: rotate(-45deg) translate(-4px, 6px);
+}
+
+.clicked .hamburger__bar--2 {
+    opacity: 0;
+}
+
+.clicked .hamburger__bar--3 {
+    -webkit-transform: rotate(45deg) translate(0, 0);
+    transform: rotate(45deg) translate(-4px, -8px);
+}
+
 
 
 /*

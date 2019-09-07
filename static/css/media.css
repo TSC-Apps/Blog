@@ -14,6 +14,8 @@
 @media (max-width: 768px) {
   .topbar .navigation--main {
     display: none; }
+  .topbar .nav__hamburger {
+    display: block; }
 
   .container,
   .container--post,
