@@ -5,21 +5,24 @@
         <div class="container">
             <div class="header__text">
                 <h1>Nice to meet you.</h1>
-                <h2 data-aos="fade-in">This is a place where you can broaden your horizons at programming, UX/UI design and electronics.
+                <h2 data-aos="fade-in">This is a place where you can broaden your horizons at programming, UX/UI design
+                    and electronics.
                 </h2>
-                <a href="{% url 'home-page' %}#team""><button class="button button--submit button--header" type="submit" data-aos="fade-up">GET TO KNOW US<i
-                    class="button__icon fas fa-arrow-right"></i></button></a>
-        </div>
+                <a href="{% url 'home-page' %}#team"">
+                <button class="button button--submit button--header" type="submit" data-aos="fade-up">GET TO KNOW US<i
+                        class="button__icon fas fa-arrow-right"></i></button>
+                </a>
+            </div>
 
-        <div class="vectors--header">
-            {% load static %}
-            <img class="vector vector--illustration" src="{% static "img/header__illustration.svg" %}" alt="">
-            <img class="vector vector--1" src="{% static "img/vector-2.svg" %}" alt="">
-            <img class="vector vector--2" src="{% static "img/vector-1.svg" %}" alt="">
-            <img class="vector vector--3" src="{% static "img/vector-1.svg" %}" alt="">
-        </div>
+            <div class="vectors--header">
+                {% load static %}
+                <img class="vector vector--illustration" src="{% static "img/header__illustration.svg" %}" alt="">
+                <img class="vector vector--1" src="{% static "img/vector-2.svg" %}" alt="">
+                <img class="vector vector--2" src="{% static "img/vector-1.svg" %}" alt="">
+                <img class="vector vector--3" src="{% static "img/vector-1.svg" %}" alt="">
+            </div>
 
-        <div data-aos="fade-up" class="scrolldown"></div>
+            <div data-aos="fade-up" class="scrolldown"></div>
     </header>
     <!-- END OF HEADER -->
 
@@ -27,7 +30,7 @@
         <div class="container--post">
             <h3 data-aos="fade-in">Blog</h3>
             <h4 data-aos="fade-up" data-aos-delay="100">latest entry</h4>
-                {% include "blog/thumbnail.html" with username=post.user.username first_name=post.user.first_name last_name=post.user.last_name avatar=post.user.avatar date=post.date article_type=post.article_type absolute_url=post.get_absolute_url title=post.title content=post.content %}
+            {% include "blog/thumbnail.html" with username=post.user.username first_name=post.user.first_name last_name=post.user.last_name avatar=post.user.avatar date=post.date article_type=post.article_type absolute_url=post.get_absolute_url title=post.title content=post.content %}
         </div>
     </section>
     <!-- END OF BLOG -->
@@ -96,7 +99,7 @@
             <div class="offer__boxes">
                 <div data-aos="fade-right" data-aos-delay="100" class="offer__box">
                     <span class="offer__box--title">
-                        We are blogging.
+                        Webdesign
                     </span>
                     <p class="offer__box--description">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -104,34 +107,26 @@
                         dolore magna
                         aliqua.
                     </p>
-                    <button class="button button--blue" type="submit">READ MORE<i
-                            class="button__icon fas fa-arrow-right"></i></button>
                 </div>
                 <div data-aos="fade-down" class="offer__box">
                     <span class="offer__box--title">
-                        Available for hire.
+                        Web applications
                     </span>
                     <p class="offer__box--description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et
-                        dolore magna
-                        aliqua.
+                        We are ready to design, code and deliver web application based on
+                        your requirements. We use modern and reliable technologies such as
+                        Angular and Flask.
                     </p>
-                    <button class="button button--blue" type="submit">READ MORE<i
-                            class="button__icon fas fa-arrow-right"></i></button>
                 </div>
                 <div data-aos="fade-up" data-aos-delay="200" class="offer__box">
                     <span class="offer__box--title">
-                        We are programming.
+                        Automation scripts
                     </span>
                     <p class="offer__box--description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et
-                        dolore magna
-                        aliqua.
+                        Bored with simple, repetitive tasks? We are capable of delivering
+                        scripts which will do it for you. Posting on social media
+                        on a regular basis or even fetching data from web can be easily automated.
                     </p>
-                    <button class="button button--blue" type="submit">READ MORE<i
-                            class="button__icon fas fa-arrow-right"></i></button>
                 </div>
             </div>
         </div>
@@ -145,41 +140,40 @@
             <h4 data-aos="fade-up" data-aos-delay="100">projects we are proud of</h4>
 
             <div class="portfolio__boxes">
-                <div data-aos="fade-right" class="portfolio__box portfolio__box--1">
-                    <div class="portfolio__box--name">
-                        FB Redesign
-                    </div>
-                    <div class="portfolio__box--description">
-                        DESIGN
-                    </div>
-                </div>
 
-                <div data-aos="fade-down" data-aos-delay="100" class="portfolio__box portfolio__box--2">
-                    <div class="portfolio__box--name">
-                        Kancelaria Chmielewscy
+                <a href="http://kancelarie-chmielewscy.pl">
+                    <div data-aos="fade-down" data-aos-delay="100" class="portfolio__box portfolio__box--2">
+                        <div class="portfolio__box--name">
+                            Kancelaria Chmielewscy
+                        </div>
+                        <div class="portfolio__box--description">
+                            HTML / CSS / JS / SEO / DESIGN
+                        </div>
                     </div>
-                    <div class="portfolio__box--description">
-                        HTML / CSS / JS / SEO / DESIGN
-                    </div>
-                </div>
+                </a>
 
-                <div data-aos="fade-right" data-aos-delay="100" class="portfolio__box portfolio__box--3">
-                    <div class="portfolio__box--name">
-                        homeBrain
+                <a href="http://homebraintsc.eu.pythonanywhere.com/">
+                    <div data-aos="fade-right" data-aos-delay="100" class="portfolio__box portfolio__box--3">
+                        <div class="portfolio__box--name">
+                            homeBrain
+                        </div>
+                        <div class="portfolio__box--description">
+                            FLASK / HTML / CSS / JS / DESIGN
+                        </div>
                     </div>
-                    <div class="portfolio__box--description">
-                        FLASK / HTML / CSS / JS / DESIGN
-                    </div>
-                </div>
+                </a>
 
-                <div data-aos="fade-up" class="portfolio__box portfolio__box--4">
-                    <div class="portfolio__box--name">
-                        SeedMed
+                <a href="http://www.seedmed.pl">
+                    <div data-aos="fade-up" class="portfolio__box portfolio__box--4">
+                        <div class="portfolio__box--name">
+                            SeedMed
+                        </div>
+                        <div class="portfolio__box--description">
+                            WordPress / HTML / CSS / JS / SEO / DESIGN
+                        </div>
                     </div>
-                    <div class="portfolio__box--description">
-                        WordPress / HTML / CSS / JS / SEO / DESIGN
-                    </div>
-                </div>
+                </a>
+
             </div>
         </div>
         <img src="{% static "img/vector--4.svg" %}" class="vector vector--5" alt="">
@@ -195,5 +189,5 @@
         </div>
     </section>
     <!-- END OF PORTFOLIO -->
-    {% include "footer.html"%}
+    {% include "footer.html" %}
 {% endblock %}
