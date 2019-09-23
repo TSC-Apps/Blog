@@ -105,11 +105,20 @@
 
     .author--info {
         width: 100%;
+
         .author--icons {
-            margin: 20px 0 !important;
+            margin: 30px 0 0 0 !important;
             padding: 0 !important;
             text-align: center !important;
             color: $blue--dark !important;
+
+            a {
+                color: $blue--dark !important;
+            }
+
+            a:hover {
+                color: $blue--light !important;
+            }
         }
 
         .author--skills {

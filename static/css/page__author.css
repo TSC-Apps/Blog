@@ -2,12 +2,12 @@
   display: flex;
   flex-wrap: wrap;
   margin: 50px auto;
-  justify-content: space-evenly;
+  justify-content: space-between;
   background: #fdfdfd;
   -webkit-box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.25);
-  padding: 50px 20px;
+  padding: 50px 60px;
   border-radius: 4px; }
   .author--flex .author__box {
     max-width: 450px;
@@ -55,18 +55,18 @@
   .author .author--basic .author--icons {
     margin-left: 50px;
     margin-top: 100px;
-    font-size: 1.5em;
-    color: white;
-    opacity: 0.5; }
+    font-size: 1.5em; }
+    .author .author--basic .author--icons a {
+      margin-right: 5px; }
+    .author .author--basic .author--icons a:visited {
+      color: white; }
+    .author .author--basic .author--icons a:hover {
+      color: #6C63FF; }
   .author .author--basic .author--skills {
     margin-left: 50px;
     margin-top: 60px;
     font-size: 2em;
     color: white; }
-  .author .author--basic .author--icons a:visited {
-    color: white; }
-  .author .author--basic .author--icons a:hover {
-    color: #6C63FF; }
 .author .container::before {
   content: '';
   display: block;

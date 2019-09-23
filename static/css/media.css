@@ -65,10 +65,14 @@
   .author--info {
     width: 100%; }
     .author--info .author--icons {
-      margin: 20px 0 !important;
+      margin: 30px 0 0 0 !important;
       padding: 0 !important;
       text-align: center !important;
       color: #364F61 !important; }
+      .author--info .author--icons a {
+        color: #364F61 !important; }
+      .author--info .author--icons a:hover {
+        color: #6C63FF !important; }
     .author--info .author--skills {
       margin: 20px 0 !important;
       padding: 0 !important;

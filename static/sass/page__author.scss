@@ -4,12 +4,12 @@
     display: flex;
     flex-wrap: wrap;
     margin: 50px auto;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background: #fdfdfd;
     -webkit-box-shadow: 0px 4px 25px 0px rgba(0,0,0,0.25);
     -moz-box-shadow: 0px 4px 25px 0px rgba(0,0,0,0.25);
     box-shadow: 0px 4px 25px 0px rgba(0,0,0,0.25);
-    padding: 50px 20px;
+    padding: 50px 60px;
     border-radius: 4px;
 
     .author__box {
@@ -86,8 +86,18 @@
             margin-left: 50px;
             margin-top: 100px;
             font-size: 1.5em;
-            color: $basic;
-            opacity: 0.5;
+
+            a {
+                margin-right: 5px;
+            }
+
+            a:visited {
+                color: $basic;
+            }
+
+            a:hover {
+                color: $blue--light;
+            }
         }
 
         .author--skills {
@@ -95,16 +105,6 @@
             margin-top: 60px;
             font-size: 2em;
             color: $basic;
-        }
-
-        .author--icons {
-            a:visited {
-                color: white;
-            }
-
-            a:hover {
-                color: $blue--light;
-            }
         }
     }
 
