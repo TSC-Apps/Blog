@@ -78,9 +78,6 @@
       text-align: center !important;
       color: #364F61 !important; } }
 @media (max-width: 1600px) {
-  header .vector {
-    display: none; }
-
   .header__text {
     margin-top: 15%;
     position: absolute;

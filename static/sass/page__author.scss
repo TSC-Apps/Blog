@@ -34,15 +34,15 @@
                     opacity: 0.5;
                 }
             }
-        
+
             a {
                 color: $blue--dark;
             }
-        
+
             a:hover{
                 opacity: 0.9;
             }
-        
+
             a:visited{
                 color: $blue--light;
             }
@@ -95,6 +95,16 @@
             margin-top: 60px;
             font-size: 2em;
             color: $basic;
+        }
+
+        .author--icons {
+            a:visited {
+                color: white;
+            }
+
+            a:hover {
+                color: $blue--light;
+            }
         }
     }
 
