@@ -1,7 +1,7 @@
 <div class="post">
     <div class="post__user">
         <img src="{{ avatar.url }}" class="post__user--avatar" alt="author photo">
-        <a href="/{{ username }}"><span class="post__user--name">{{ first_name }}{{ last_name }}</span></a>
+        <a href="/{{ username }}"><span class="post__user--name">{{ first_name }} {{ last_name }}</span></a>
         <span class="post__user--date">{{date | date:"d F Y" }}</span>
     </div>
 
