@@ -75,42 +75,13 @@
 {% block body %} {% endblock %}
 
 <!-- SCRIPTS -->
-<script
-        defer
+<script defer
         src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
         integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
         crossorigin="anonymous"
 ></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js">
-</script>
-<script>
-    AOS.init();
-</script>
-<script>
-    const searchButton = document.querySelector('#button--search');
-    const searchBar = document.querySelector('.search');
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-    searchButton.addEventListener('click', () => {
-        searchBar.classList.toggle('invisible');
-        console.log('test');
-    });
-</script>
-<script>
-    const hamburgerIcon = document.querySelector('.hamburger');
-    const hamburgerMenu = document.querySelector('.hamburger__menu');
-    const hamburgerEntries = document.querySelectorAll('.hamburger__entry');
-
-    for (let i = 0; i < hamburgerEntries.length; i++) {
-        let item = hamburgerEntries[i];
-        item.addEventListener('click', toggleHamburger);
-    }
-
-    hamburgerIcon.addEventListener('click', toggleHamburger);
-
-    function toggleHamburger() {
-        hamburgerIcon.classList.toggle("clicked");
-        hamburgerMenu.classList.toggle("show");
-    }
-</script>
+<script src="{% static 'js/scripts.js' %}"></script>
 </body>
 </html>
