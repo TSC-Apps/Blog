@@ -18,6 +18,11 @@ def blog_post_list_view(request):
                 Q(title__icontains=search_phrase) |
                 Q(user__username__icontains=search_phrase)).distinct()
 
+        category = request.GET.get('category')
+        if category:
+            qs = BlogPost.objects.filter(article_type=category)
+            print(qs)
+
     paginator = Paginator(qs, 5)
     page = request.GET.get('page')
     objects = paginator.get_page(page)

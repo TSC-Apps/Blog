@@ -6,10 +6,14 @@
 
             <div class="categories">
                 <p>Choose a category</p>
-                <button class="category button button--active">Programming</button>
-                <button class="category button button--category">UX/UI</button>
-                <button class="category button button--category">Electronics</button>
-                <button class="category button button--category">Mathematics</button>
+                <form method="GET">
+                    <button name="category" value="programming" class="category button button--category">Programming</button>
+                    <button name="category" value="uxui" class="category button button--category">UX/UI</button>
+                    <button name="category" value="electronics" class="category button button--category">Electronics</button>
+                    <button name="category" value="other" class="category button button--category">Other</button>
+                    <button name="category" value="" class="category button button--category">No category</button>
+                </form>
+
             </div>
 
             {% for post in object_list %}
@@ -48,5 +52,5 @@
         </div>
     </section>
     <!-- END OF BLOG -->
-    {% include "blog/footer.html"%}
+    {% include "blog/footer.html" %}
 {% endblock %}
