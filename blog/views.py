@@ -21,7 +21,6 @@ def blog_post_list_view(request):
         category = request.GET.get('category')
         if category:
             qs = BlogPost.objects.filter(article_type=category)
-            print(qs)
 
     paginator = Paginator(qs, 5)
     page = request.GET.get('page')
