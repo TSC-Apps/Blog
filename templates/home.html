@@ -39,40 +39,42 @@
         <h3 data-aos="fade-in">People</h3>
         <h4 data-aos="fade-up" data-aos-delay="100">in charge of this site</h4>
         <div class="container--people">
-            <a href="{% url 'tymek' %}">
-                <div data-aos="fade-right" data-aos-delay="100" class="people__box people__box--1">
-                    <div class="people__box--name">
-                        Tymoteusz Frankiewicz
+            <div class="people__boxes">
+                <a href="{% url 'tymek' %}">
+                    <div data-aos="fade-right" data-aos-delay="100" class="people__box people__box--1">
+                        <div class="people__box--name">
+                            Tymoteusz Frankiewicz
+                        </div>
+                        <div class="people__box--function">
+                            Python devotee
+                        </div>
                     </div>
-                    <div class="people__box--function">
-                        Python devotee
-                    </div>
-                </div>
-            </a>
+                </a>
 
-            <a href="{% url 'szymonw' %}">
-                <div data-aos="fade-down" class="people__box people__box--2">
-                    <div class="people__box--name">
-                        Szymon Wiśniewski
+                <a href="{% url 'szymonw' %}">
+                    <div data-aos="fade-down" class="people__box people__box--2">
+                        <div class="people__box--name">
+                            Szymon Wiśniewski
+                        </div>
+                        <div class="people__box--function">
+                            Frontend wizard
+                        </div>
                     </div>
-                    <div class="people__box--function">
-                        Frontend wizard
-                    </div>
-                </div>
-            </a>
+                </a>
 
-            <a href="{% url 'szymonf' %}">
-                <div data-aos="fade-up" data-aos-delay="200" class="people__box people__box--3">
-                    <div class="people__box--name">
-                        Szymon Frankiewicz
+                <a href="{% url 'szymonf' %}">
+                    <div data-aos="fade-up" data-aos-delay="200" class="people__box people__box--3">
+                        <div class="people__box--name">
+                            Szymon Frankiewicz
+                        </div>
+                        <div class="people__box--function">
+                            DevOps guy
+                        </div>
                     </div>
-                    <div class="people__box--function">
-                        DevOps guy
-                    </div>
-                </div>
-            </a>
+                </a>
+            </div>
+            <img src="{% static "img/vector--3.svg" %}" class="vector vector--4" alt="">
         </div>
-        <img src="{% static "img/vector--3.svg" %}" class="vector vector--4" alt="">
     </section>
     <!-- END OF PEOPLE -->
 

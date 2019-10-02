@@ -1,180 +1,229 @@
 @import 'variables';
 
+@media (max-width: 321px) {
+  .portfolio__box {
+    width: 280px;
+    height: 175.2px;
+  }
+}
 
+@media(max-width: 420px) {
+  .people__box {
+    width: 280px;
+    height: 420px;
+  }
+
+  .portfolio {
+    padding-bottom: 80px;
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 420px) {
+  .portfolio__box {
+    width: 300px;
+    height: 187.5px;
+  }
+
+  .people__box {
+    width: 280px;
+    height: 420px;
+  }
+
+  .portfolio {
+    padding-bottom: 80px;
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 420px) and (max-width: 576px) {
+  .portfolio__box {
+    width: 409.5px;
+    height: 256px;
+  }
+}
 
 @media (max-width: 576px) {
-    .container--login {
-        position: absolute;
-        width: auto;
-        top: 50%;
+  .people {
+    margin-top: 50px;
+  }
+
+  .container--login {
+    position: absolute;
+    width: auto;
+    top: 50%;
+  }
+
+  .contact {
+    h3 {
+      padding-top: 120px;
+    }
+  }
+
+  .blog {
+    .button--category {
+      margin-bottom: 15px;
     }
 
-    .contact {
-        h3 {
-            padding-top: 120px;
-        }
+    .post__tag {
+      display: none;
     }
+  }
+}
 
-    .blog {
-        .button--category {
-            margin-bottom: 15px;
-        }
-
-        .post__tag {
-            display: none;
-        }
-    }
+@media (min-width: 576px) and (max-width: 768px) {
+  .portfolio__box {
+    width: 512px;
+    height: 320px;
+  }
 }
 
 @media (max-width: 768px) {
-    .topbar {
-        .navigation--main {
-            display: none;
-        }
+  .container,
+  .container--post,
+  .container--people,
+  .container--portfolio {
+    width: 90%;
+  }
 
-        .nav__hamburger {
-            display: block;
-        }
-
-        .icon--search {
-            right: 65px;
-        }
+  .topbar {
+    .navigation--main {
+      display: none;
     }
 
-    .container,
-    .container--post,
-    .container--people,
-    .container--portfolio {
-        width: 90%;
+    .nav__hamburger {
+      display: block;
     }
 
-    .offer {
-        .offer__box {
-            height: auto;
-            width: 80%;
-        }
-        .offer__box--title {
-            position: static;
-            font-size: 2em;
-        }
+    .icon--search {
+      right: 65px;
+    }
+  }
 
-        .offer__box--description {
-            margin-top: 50px;
-        }
+  .offer__box {
+    height: auto;
+    width: 90%;
+    padding: 30px;
+
+    .offer__box--title {
+      position: static;
+      font-size: 1.5em;
+      left: 0;
     }
 
-    .footer__menu {
-        margin-top: 300px;
-        margin-bottom: 30px;
-        display: block;
+    .offer__box--description {
+      margin-top: 50px;
     }
+  }
 
-    .container--login {
-        width: 80%;
-    }
+  .footer__menu {
+    margin-top: 300px;
+    margin-bottom: 30px;
+    display: block;
+  }
 
-    .login__input {
-        width: 100%;
-    }
+  .container--login {
+    width: 80%;
+  }
 
-    .container--404 {
-        width: 80%;
-        
-        h3 {
-            display: none;
-        }
+  .login__input {
+    width: 100%;
+  }
+
+  .container--404 {
+    width: 80%;
+
+    h3 {
+      display: none;
     }
+  }
 }
 
 @media (max-width: 992px) {
-    .blog {
-        margin-top: 180px;
+  .vector {
+    display: none;
+  }
+
+  .offer {
+    padding-bottom: 0;
+  }
+
+  .offer__box {
+    margin-bottom: 80px;
+  }
+
+  .author--img {
+    margin: 0 auto;
+  }
+
+  .author--info {
+    width: 100%;
+
+    .author--icons {
+      margin: 30px 0 0 0 !important;
+      padding: 0 !important;
+      text-align: center !important;
+      color: $blue--dark !important;
+
+      a {
+        color: $blue--dark !important;
+      }
+
+      a:hover {
+        color: $blue--light !important;
+      }
     }
 
-    .vector {
-        display: none;
+    .author--skills {
+      margin: 20px 0 !important;
+      padding: 0 !important;
+      text-align: center !important;
+      color: $blue--dark !important;
     }
 
-    .offer__box {
-        margin-bottom: 80px;
+    h3, h4 {
+      text-align: center !important;
+      color: $blue--dark !important;
     }
-
-    .author--img {
-        margin: 0 auto;
-    }
-
-    .author--info {
-        width: 100%;
-
-        .author--icons {
-            margin: 30px 0 0 0 !important;
-            padding: 0 !important;
-            text-align: center !important;
-            color: $blue--dark !important;
-
-            a {
-                color: $blue--dark !important;
-            }
-
-            a:hover {
-                color: $blue--light !important;
-            }
-        }
-
-        .author--skills {
-            margin: 20px 0 !important;
-            padding: 0 !important;
-            text-align: center !important;
-            color: $blue--dark !important;
-        }
-        
-        h3, h4 {
-            text-align: center !important;
-            color: $blue--dark !important;
-        }
-    }
-}
-
-@media (max-width: 1200px) {
+  }
 }
 
 @media (max-width: 1600px) {
+  .header__text {
+    margin-top: 15%;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 
-    .header__text {
-        margin-top: 15%;
-        position: absolute;
-        text-align: center;
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
-        width: 80%;
-
-        h1,
-        h2 {
-            text-align: center;
-        }
-
-        h2 {
-            margin-top: -10px;
-        }
+    h1,
+    h2 {
+      text-align: center;
     }
 
-    .scrolldown {
-        display: none;
+    h2 {
+      margin-top: -10px;
     }
+  }
+
+  .scrolldown {
+    display: none;
+  }
 }
 
 @media (max-width: 1800px) {
-    .offer__box {
-        margin-bottom: 80px;
-    }
+  .offer__box {
+    margin-bottom: 80px;
+  }
 
-    .container--offer {
-        width: 80%;
-    }
+  .container--offer {
+    width: 80%;
+  }
 
-    .offer__box:nth-child(odd) {
-        margin-top: 0;
-    }
+  .offer__box:nth-child(odd) {
+    margin-top: 0;
+  }
 }

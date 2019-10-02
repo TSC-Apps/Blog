@@ -1,4 +1,35 @@
+@media (max-width: 321px) {
+  .portfolio__box {
+    width: 280px;
+    height: 175.2px; } }
+@media (max-width: 420px) {
+  .people__box {
+    width: 280px;
+    height: 420px; }
+
+  .portfolio {
+    padding-bottom: 80px;
+    padding-top: 0; } }
+@media (min-width: 321px) and (max-width: 420px) {
+  .portfolio__box {
+    width: 300px;
+    height: 187.5px; }
+
+  .people__box {
+    width: 280px;
+    height: 420px; }
+
+  .portfolio {
+    padding-bottom: 80px;
+    padding-top: 0; } }
+@media (min-width: 420px) and (max-width: 576px) {
+  .portfolio__box {
+    width: 409.5px;
+    height: 256px; } }
 @media (max-width: 576px) {
+  .people {
+    margin-top: 50px; }
+
   .container--login {
     position: absolute;
     width: auto;
@@ -11,7 +42,17 @@
     margin-bottom: 15px; }
   .blog .post__tag {
     display: none; } }
+@media (min-width: 576px) and (max-width: 768px) {
+  .portfolio__box {
+    width: 512px;
+    height: 320px; } }
 @media (max-width: 768px) {
+  .container,
+  .container--post,
+  .container--people,
+  .container--portfolio {
+    width: 90%; }
+
   .topbar .navigation--main {
     display: none; }
   .topbar .nav__hamburger {
@@ -19,20 +60,16 @@
   .topbar .icon--search {
     right: 65px; }
 
-  .container,
-  .container--post,
-  .container--people,
-  .container--portfolio {
-    width: 90%; }
-
-  .offer .offer__box {
+  .offer__box {
     height: auto;
-    width: 80%; }
-  .offer .offer__box--title {
-    position: static;
-    font-size: 2em; }
-  .offer .offer__box--description {
-    margin-top: 50px; }
+    width: 90%;
+    padding: 30px; }
+    .offer__box .offer__box--title {
+      position: static;
+      font-size: 1.5em;
+      left: 0; }
+    .offer__box .offer__box--description {
+      margin-top: 50px; }
 
   .footer__menu {
     margin-top: 300px;
@@ -50,11 +87,11 @@
     .container--404 h3 {
       display: none; } }
 @media (max-width: 992px) {
-  .blog {
-    margin-top: 180px; }
-
   .vector {
     display: none; }
+
+  .offer {
+    padding-bottom: 0; }
 
   .offer__box {
     margin-bottom: 80px; }
