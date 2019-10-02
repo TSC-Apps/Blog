@@ -1,115 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     {% load static %}
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Sample</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="{% static 'css/normalize.css' %}" />
-    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
-    <link rel="stylesheet" href="{% static 'css/utilities.css' %}" />
-    <link rel="stylesheet" href="{% static 'css/page__index.css' %}" />
-    <link rel="stylesheet" href="{% static 'css/page__blog.css' %}" />
-    <link rel="stylesheet" href="{% static 'css/media.css' %}" />
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>TScode</title>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/utilities.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/page__index.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/page__blog.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/media.css' %}"/>
     {% block page_imports %} {% endblock %}
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  </head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+</head>
 
-  <body>
-    <nav class="topbar">
-      <div class="topbar__logo"><a href="{% url 'home-page' %}">Sample</a></div>
-      <ul class="navigation--main">
+<body>
+<nav class="topbar">
+    <div class="topbar__logo"><a href="{% url 'home-page' %}">Sample</a></div>
+    <ul class="navigation--main">
         <a href="{% url 'blog' %}">
-          <li>BLOG</li>
+            <li>BLOG</li>
         </a>
         <a href="{% url 'home-page' %}#projects">
-          <li>PROJECTS</li>
+            <li>PROJECTS</li>
         </a>
         <a href="{% url 'home-page' %}#team">
-          <li>TEAM</li>
+            <li>TEAM</li>
         </a>
         <a href="{% url 'home-page' %}#offer">
-          <li>OFFER</li>
+            <li>OFFER</li>
         </a>
         <a href="{% url 'home-page' %}#contact">
-          <li>CONTACT</li>
+            <li>CONTACT</li>
         </a>
-      </ul>
+    </ul>
 
-      <div id="button--search">
+    <div id="button--search">
         <i class="icon icon--search fas fa-search"></i>
-      </div>
+    </div>
 
-      <div class="nav__hamburger">
+    <div class="nav__hamburger">
         <div class="hamburger">
-          <div class="hamburger__bar--1"></div>
-          <div class="hamburger__bar--2"></div>
-          <div class="hamburger__bar--3"></div>
+            <div class="hamburger__bar--1"></div>
+            <div class="hamburger__bar--2"></div>
+            <div class="hamburger__bar--3"></div>
         </div>
 
         <ul class="hamburger__menu">
-          <li>
-            <a class="hamburger__entry" href="{% url 'blog' %}">BLOG</a>
-          </li>
-          <li>
-            <a class="hamburger__entry" href="{% url 'home-page' %}#projects">PROJECTS</a>
-          </li>
-          <li>
-            <a class="hamburger__entry" href="{% url 'home-page' %}#team">TEAM</a>
-          </li>
-          <li>
-            <a class="hamburger__entry" href="{% url 'home-page' %}#offer">OFFER</a>
-          </li>
-          <li>
-            <a class="hamburger__entry" href="{% url 'home-page' %}#contact">CONTACT</a>
-          </li>
+            <li>
+                <a class="hamburger__entry" href="{% url 'blog' %}">BLOG</a>
+            </li>
+            <li>
+                <a class="hamburger__entry" href="{% url 'home-page' %}#projects">PROJECTS</a>
+            </li>
+            <li>
+                <a class="hamburger__entry" href="{% url 'home-page' %}#team">TEAM</a>
+            </li>
+            <li>
+                <a class="hamburger__entry" href="{% url 'home-page' %}#offer">OFFER</a>
+            </li>
+            <li>
+                <a class="hamburger__entry" href="{% url 'home-page' %}#contact">CONTACT</a>
+            </li>
         </ul>
-      </div>
-    </nav>
+    </div>
+</nav>
 
-    <input class="search invisible" placeholder="searching for..."></input>
+<form method="GET" action="/blog">
+    <input class="search invisible" name="search" placeholder="searching for..." autocomplete="off">
+</form>
+{% block body %} {% endblock %}
 
-    {% block body %} {% endblock %}
+<!-- SCRIPTS -->
+<script defer
+        src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
+        integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
+        crossorigin="anonymous"
+></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-    <!-- SCRIPTS -->
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
-      integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js">
-    </script>
-    <script>
-        AOS.init();
-    </script>
-    <script>
-      const searchButton = document.querySelector('#button--search');
-      const searchBar = document.querySelector('.search');
-
-      searchButton.addEventListener('click', () => {
-        searchBar.classList.toggle('invisible');
-        console.log('test');
-      });
-    </script>
-    <script>
-      const hamburgerIcon = document.querySelector('.hamburger');
-      const hamburgerMenu = document.querySelector('.hamburger__menu');
-      const hamburgerEntries = document.querySelectorAll('.hamburger__entry');
-
-      for(let i = 0; i < hamburgerEntries.length; i++) {
-          let item = hamburgerEntries[i];
-          item.addEventListener('click', toggleHamburger);
-      }
-
-      hamburgerIcon.addEventListener('click', toggleHamburger);
-
-      function toggleHamburger() {
-          hamburgerIcon.classList.toggle("clicked");
-          hamburgerMenu.classList.toggle("show");
-      }
-    </script>
-  </body>
+<script src="{% static 'js/scripts.js' %}"></script>
+</body>
 </html>
