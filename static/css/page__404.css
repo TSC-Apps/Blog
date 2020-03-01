@@ -1,15 +1,19 @@
 body {
-  background-color: #201F44; }
+  background-color: #201F44;
+}
 
 h1, h2, h3 {
   text-align: center;
-  color: white; }
+  color: white;
+}
 
 h1 {
-  font-size: 6em; }
+  font-size: 6em;
+}
 
 h2 {
-  font-size: 2em; }
+  font-size: 2em;
+}
 
 h3 {
   font-size: 9em;
@@ -19,7 +23,8 @@ h3 {
   top: -80px;
   left: 0;
   bottom: 0;
-  right: 0; }
+  right: 0;
+}
 
 .container--404 {
   height: 50%;
@@ -28,6 +33,7 @@ h3 {
   top: 0;
   left: 0;
   bottom: 0;
-  right: 0; }
+  right: 0;
+}
 
 /*# sourceMappingURL=page__404.css.map */
