@@ -73,6 +73,7 @@
   font-size: 1.5em;
 }
 .author .author--basic .author--icons a {
+  color: white;
   margin-right: 5px;
 }
 .author .author--basic .author--icons a:visited {

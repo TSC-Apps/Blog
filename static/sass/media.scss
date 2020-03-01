@@ -140,9 +140,7 @@
 }
 
 @media (max-width: 992px) {
-  .vector {
-    display: none;
-  }
+
 
   .offer {
     padding-bottom: 0;
@@ -215,6 +213,10 @@
 }
 
 @media (max-width: 1800px) {
+  .vector {
+    display: none;
+  }
+
   .offer__box {
     margin-bottom: 80px;
   }
