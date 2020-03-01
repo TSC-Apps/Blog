@@ -30,4 +30,4 @@ urlpatterns = [
     # all urls from blog app, which is plugable app module
     # first arguments sets it like this: blog/edit...
     path('blog/', include('blog.urls')),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]
