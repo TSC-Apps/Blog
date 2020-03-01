@@ -80,15 +80,13 @@ WSGI_APPLICATION = 'Backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': name,
         'USER': user,
         'PASSWORD': password,
-        'HOST': 'localhost',  # Or an IP Address that your DB is hosted on
-        'PORT': '3306',
-    },
-    'OPTIONS': {'init_command': 'SET storage_engine=MyISAM', },
-
+        'HOST': 'localhost',
+        'PORT': '',
+    }
 }
 
 # Password validation

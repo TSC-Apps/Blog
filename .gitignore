@@ -6,3 +6,5 @@ static/admin
 static/blog
 static/ckeditor
 media/
+package-lock.json
+node_modules/
